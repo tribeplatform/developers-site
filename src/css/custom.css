@@ -1,0 +1,157 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2d9f6f;
+  --ifm-color-primary-dark: #298f64;
+  --ifm-color-primary-darker: #26875e;
+  --ifm-color-primary-darkest: #206f4e;
+  --ifm-color-primary-light: #32af7a;
+  --ifm-color-primary-lighter: #34b780;
+  --ifm-color-primary-lightest: #40c98f;
+  --ifm-code-font-size: 95%;
+
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 700;
+
+  --ifm-navbar-padding-vertical: 1em;
+  --ifm-navbar-height: 4em;
+  --ifm-navbar-background-color: rgba(245, 247, 248, 0.8);
+  --ifm-navbar-shadow: none;
+
+  --ifm-footer-background-color: #000;
+
+  font-family: Circularxxtt, sans-serif;
+}
+
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-BlackItalic.ttf") format("truetype"),
+    url("/fonts/CircularXXTT-ExtraBlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt book";
+  src: url("/fonts/CircularXXTT-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Black.ttf") format("truetype"),
+    url("/fonts/CircularXXTT-ExtraBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-BookItalic.ttf") format("truetype"),
+    url("/fonts/CircularXXTT-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circularxxtt";
+  src: url("/fonts/CircularXXTT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar__logo {
+  height: 24px;
+  width: 116px;
+}
+
+.navbar__link {
+  color: #1f1f1f;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: var(--ifm-font-weight-bold);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #000;
+}
