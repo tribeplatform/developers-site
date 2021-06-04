@@ -1,0 +1,39 @@
+---
+id: get-space-topics
+title: getSpaceTopics
+---
+
+No description
+
+```graphql
+getSpaceTopics(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  query: String
+  reverse: Boolean
+  spaceId: ID!
+): PaginatedTopic!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `query` ([`String`](/docs/graphql/scalars/string))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
+
+### Type
+
+#### [`PaginatedTopic`](/docs/graphql/objects/paginated-topic)

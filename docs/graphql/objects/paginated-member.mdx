@@ -1,0 +1,25 @@
+---
+id: paginated-member
+title: PaginatedMember
+---
+
+No description
+
+```graphql
+type PaginatedMember {
+  edges: [MemberEdge!]
+  nodes: [Member!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[MemberEdge!]`](/docs/graphql/objects/member-edge))
+
+#### `nodes` ([`[Member!]`](/docs/graphql/objects/member))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

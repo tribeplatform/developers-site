@@ -1,0 +1,25 @@
+---
+id: space-auth-member-props
+title: SpaceAuthMemberProps
+---
+
+No description
+
+```graphql
+type SpaceAuthMemberProps {
+  context: PermissionContext!
+  membershipStatus: SpaceMembershipStatus!
+  permissions: [ActionPermissions!]
+  scopes: [String!]
+}
+```
+
+### Fields
+
+#### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
+
+#### `membershipStatus` ([`SpaceMembershipStatus!`](/docs/graphql/enums/space-membership-status))
+
+#### `permissions` ([`[ActionPermissions!]`](/docs/graphql/objects/action-permissions))
+
+#### `scopes` ([`[String!]`](/docs/graphql/scalars/string))

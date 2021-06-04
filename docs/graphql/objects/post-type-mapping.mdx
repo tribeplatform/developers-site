@@ -1,0 +1,40 @@
+---
+id: post-type-mapping
+title: PostTypeMapping
+---
+
+No description
+
+```graphql
+type PostTypeMapping {
+  default: String
+  description: String
+  field: PostFieldsEnum!
+  isMainContent: Boolean
+  isSearchable: Boolean
+  key: String!
+  required: Boolean
+  title: String
+  type: PostMappingTypeEnum!
+}
+```
+
+### Fields
+
+#### `default` ([`String`](/docs/graphql/scalars/string))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `field` ([`PostFieldsEnum!`](/docs/graphql/enums/post-fields-enum))
+
+#### `isMainContent` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `isSearchable` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `key` ([`String!`](/docs/graphql/scalars/string))
+
+#### `required` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `title` ([`String`](/docs/graphql/scalars/string))
+
+#### `type` ([`PostMappingTypeEnum!`](/docs/graphql/enums/post-mapping-type-enum))

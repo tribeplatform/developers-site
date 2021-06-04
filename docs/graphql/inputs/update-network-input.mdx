@@ -1,0 +1,91 @@
+---
+id: update-network-input
+title: UpdateNetworkInput
+---
+
+No description
+
+```graphql
+type UpdateNetworkInput {
+  aliases: [String!]
+  billingEmail: String
+  brandColor: String
+  companyName: String
+  defaultSpaceIds: [ID!]
+  description: String
+  domain: String
+  faviconId: String
+  footer: UpdateFooter
+  incidentEmails: [String!]
+  industry: NetworkIndustryType
+  landingPages: UpdateNetworkSettingsInput
+  locale: String
+  logoId: String
+  membership: NetworkMembership
+  name: String
+  newDomain: String
+  primaryMembers: NetworkPrimaryMembersType
+  privacyPolicyUrl: String
+  termsOfServiceUrl: String
+  themes: UpdateThemes
+  timeframe: NetworkTimeframeType
+  topNavigation: UpdateTopNavigation
+  tribeBranding: Boolean
+  visibility: NetworkVisibility
+  whoCanInviteIds: [String!]
+}
+```
+
+### Fields
+
+#### `aliases` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `billingEmail` ([`String`](/docs/graphql/scalars/string))
+
+#### `brandColor` ([`String`](/docs/graphql/scalars/string))
+
+#### `companyName` ([`String`](/docs/graphql/scalars/string))
+
+#### `defaultSpaceIds` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `domain` ([`String`](/docs/graphql/scalars/string))
+
+#### `faviconId` ([`String`](/docs/graphql/scalars/string))
+
+#### `footer` ([`UpdateFooter`](/docs/graphql/inputs/update-footer))
+
+#### `incidentEmails` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `industry` ([`NetworkIndustryType`](/docs/graphql/enums/network-industry-type))
+
+#### `landingPages` ([`UpdateNetworkSettingsInput`](/docs/graphql/inputs/update-network-settings-input))
+
+#### `locale` ([`String`](/docs/graphql/scalars/string))
+
+#### `logoId` ([`String`](/docs/graphql/scalars/string))
+
+#### `membership` ([`NetworkMembership`](/docs/graphql/enums/network-membership))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `newDomain` ([`String`](/docs/graphql/scalars/string))
+
+#### `primaryMembers` ([`NetworkPrimaryMembersType`](/docs/graphql/enums/network-primary-members-type))
+
+#### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `themes` ([`UpdateThemes`](/docs/graphql/inputs/update-themes))
+
+#### `timeframe` ([`NetworkTimeframeType`](/docs/graphql/enums/network-timeframe-type))
+
+#### `topNavigation` ([`UpdateTopNavigation`](/docs/graphql/inputs/update-top-navigation))
+
+#### `tribeBranding` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `visibility` ([`NetworkVisibility`](/docs/graphql/enums/network-visibility))
+
+#### `whoCanInviteIds` ([`[String!]`](/docs/graphql/scalars/string))

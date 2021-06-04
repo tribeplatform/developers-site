@@ -17,12 +17,24 @@ module.exports = {
       },
       items: [
         {
-          type: "doc",
-          docId: "intro",
+          docId: "index",
+          to: "/",
+          activeBaseRegex: "^/$",
           position: "left",
-          label: "Tutorial",
+          label: "Home",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        {
+          type: "doc",
+          docId: "guide/intro",
+          position: "left",
+          label: "Guide",
+        },
+        {
+          type: "doc",
+          docId: "graphql/schema",
+          position: "left",
+          label: "GraphQL",
+        },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
@@ -38,7 +50,7 @@ module.exports = {
           items: [
             {
               label: "Tutorial",
-              to: "/docs/intro",
+              to: "/docs/guide/intro",
             },
           ],
         },
@@ -76,6 +88,18 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
+  plugins: [
+    [
+      require.resolve("@edno/docusaurus2-graphql-doc-generator"),
+      {
+        schema: "https://app.tribe.so/graphql",
+        rootPath: "./docs", // docs will be generated under './docs/graphql' (rootPath/baseURL)
+        baseURL: "graphql",
+        homepage: "./docs/schema.md",
+        linkRoot: "/docs",
+      },
+    ],
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -85,12 +109,6 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/edit/master/website/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

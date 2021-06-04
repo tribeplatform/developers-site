@@ -1,0 +1,28 @@
+---
+id: report-data
+title: ReportData
+---
+
+No description
+
+```graphql
+type ReportData {
+  description: String
+  key: String!
+  previousValue: ReportDataValue
+  type: ReportDataType!
+  value: ReportDataValue!
+}
+```
+
+### Fields
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `key` ([`String!`](/docs/graphql/scalars/string))
+
+#### `previousValue` ([`ReportDataValue`](/docs/graphql/unions/report-data-value))
+
+#### `type` ([`ReportDataType!`](/docs/graphql/enums/report-data-type))
+
+#### `value` ([`ReportDataValue!`](/docs/graphql/unions/report-data-value))

@@ -1,0 +1,39 @@
+---
+id: get-space-app-installations
+title: getSpaceAppInstallations
+---
+
+No description
+
+```graphql
+getSpaceAppInstallations(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  reverse: Boolean
+  spaceId: ID!
+  status: AppInstallationStatus
+): PaginatedAppInstallation!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `status` ([`AppInstallationStatus`](/docs/graphql/enums/app-installation-status))
+
+### Type
+
+#### [`PaginatedAppInstallation`](/docs/graphql/objects/paginated-app-installation)

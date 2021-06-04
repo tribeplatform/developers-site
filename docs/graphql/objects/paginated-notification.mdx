@@ -1,0 +1,25 @@
+---
+id: paginated-notification
+title: PaginatedNotification
+---
+
+No description
+
+```graphql
+type PaginatedNotification {
+  edges: [NotificationEdge!]
+  nodes: [Notification!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[NotificationEdge!]`](/docs/graphql/objects/notification-edge))
+
+#### `nodes` ([`[Notification!]`](/docs/graphql/objects/notification))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

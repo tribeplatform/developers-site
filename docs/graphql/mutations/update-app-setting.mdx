@@ -1,0 +1,30 @@
+---
+id: update-app-setting
+title: updateAppSetting
+---
+
+No description
+
+```graphql
+updateAppSetting(
+  context: PermissionContext!
+  entityId: ID = 0
+  networkId: ID!
+  settings: String!
+): AppSetting!
+
+```
+
+### Arguments
+
+#### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
+
+#### `entityId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `networkId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `settings` ([`String!`](/docs/graphql/scalars/string))
+
+### Type
+
+#### [`AppSetting`](/docs/graphql/objects/app-setting)

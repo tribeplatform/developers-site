@@ -1,0 +1,25 @@
+---
+id: paginated-moderation
+title: PaginatedModeration
+---
+
+No description
+
+```graphql
+type PaginatedModeration {
+  edges: [ModerationEdge!]
+  nodes: [Moderation!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[ModerationEdge!]`](/docs/graphql/objects/moderation-edge))
+
+#### `nodes` ([`[Moderation!]`](/docs/graphql/objects/moderation))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

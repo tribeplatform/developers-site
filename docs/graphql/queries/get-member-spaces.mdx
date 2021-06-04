@@ -1,0 +1,42 @@
+---
+id: get-member-spaces
+title: getMemberSpaces
+---
+
+No description
+
+```graphql
+getMemberSpaces(
+  after: String
+  before: String
+  groupId: String
+  limit: Int!
+  memberId: ID!
+  offset: Int = 0
+  reverse: Boolean
+  roleIds: [ID!] = []
+): PaginatedSpaceMember!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `groupId` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `memberId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `roleIds` ([`[ID!]`](/docs/graphql/scalars/id))
+
+### Type
+
+#### [`PaginatedSpaceMember`](/docs/graphql/objects/paginated-space-member)

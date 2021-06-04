@@ -1,0 +1,100 @@
+---
+id: space
+title: Space
+---
+
+No description
+
+```graphql
+type Space {
+  authMemberProps: SpaceAuthMemberProps
+  banner: Media
+  createdAt: DateTime!
+  createdBy: Member
+  customOrderingIndexInGroup: Float!
+  description: String
+  group: Group
+  hidden: Boolean
+  highlightedTopics: [HighlightedTopic!]
+  id: ID!
+  image: Media
+  inviteOnly: Boolean
+  members(limit: Int!): PaginatedSpaceMember
+  membersCount: Int!
+  name: String!
+  network: Network
+  nonAdminsCanInvite: Boolean
+  pinnedPosts: [Post!]
+  posts(excludePins: Boolean, limit: Int!): PaginatedPost
+  postsCount: Int
+  private: Boolean
+  roles: [SpaceRole!]
+  seoDetail: SpaceSeoDetail
+  sidebarWidgets: [String!]
+  slug: String!
+  spaceType: SpaceType
+  topicFilter: TopicFilter
+}
+```
+
+### Fields
+
+#### `authMemberProps` ([`SpaceAuthMemberProps`](/docs/graphql/objects/space-auth-member-props))
+
+#### `banner` ([`Media`](/docs/graphql/unions/media))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `createdBy` ([`Member`](/docs/graphql/objects/member))
+
+#### `customOrderingIndexInGroup` ([`Float!`](/docs/graphql/scalars/float))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `group` ([`Group`](/docs/graphql/objects/group))
+
+#### `hidden` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `highlightedTopics` ([`[HighlightedTopic!]`](/docs/graphql/objects/highlighted-topic))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `image` ([`Media`](/docs/graphql/unions/media))
+
+#### `inviteOnly` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `members` ([`PaginatedSpaceMember`](/docs/graphql/objects/paginated-space-member))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `membersCount` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `nonAdminsCanInvite` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `pinnedPosts` ([`[Post!]`](/docs/graphql/objects/post))
+
+#### `posts` ([`PaginatedPost`](/docs/graphql/objects/paginated-post))
+
+- ##### `excludePins` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `postsCount` ([`Int`](/docs/graphql/scalars/int))
+
+#### `private` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `roles` ([`[SpaceRole!]`](/docs/graphql/objects/space-role))
+
+#### `seoDetail` ([`SpaceSeoDetail`](/docs/graphql/objects/space-seo-detail))
+
+#### `sidebarWidgets` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `slug` ([`String!`](/docs/graphql/scalars/string))
+
+#### `spaceType` ([`SpaceType`](/docs/graphql/objects/space-type))
+
+#### `topicFilter` ([`TopicFilter`](/docs/graphql/objects/topic-filter))

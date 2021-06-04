@@ -1,0 +1,25 @@
+---
+id: paginated-space
+title: PaginatedSpace
+---
+
+No description
+
+```graphql
+type PaginatedSpace {
+  edges: [SpaceEdge!]
+  nodes: [Space!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[SpaceEdge!]`](/docs/graphql/objects/space-edge))
+
+#### `nodes` ([`[Space!]`](/docs/graphql/objects/space))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

@@ -1,0 +1,146 @@
+---
+id: post
+title: Post
+---
+
+No description
+
+```graphql
+type Post {
+  allowedEmojis: [String!]
+  authMemberProps: PostAuthMemberProps
+  createdAt: DateTime!
+  createdBy: SpaceMember
+  embeds: [Embed!]
+  forbiddenEmojis: [String!]
+  hasMoreContent: Boolean!
+  id: ID!
+  isAnonymous: Boolean!
+  mappingFields: [PostMappingField!]
+  mentions: [Member!]
+  negativeReactions: [String!]
+  negativeReactionsCount: Int!
+  owner: SpaceMember
+  pinnedInto: [PinnedInto!]!
+  pinnedReplies: [Post!]
+  positiveReactions: [String!]
+  positiveReactionsCount: Int!
+  postType: PostType
+  postTypeId: ID!
+  primaryReactionType: ReactionType!
+  publishedAt: DateTime
+  reactions: [PostReactionDetail!]
+  reactionsCount: Int!
+  repliedTo: Post
+  repliedToIds: [String!]
+  repliedTos: [Post!]
+  replies(
+    excludePins: Boolean
+    limit: Int!
+    orderBy: PostListOrderByEnum
+  ): PaginatedPost
+  repliesCount: Int!
+  seoDetail: PostSeoDetail!
+  shortContent: String
+  sidebarWidgets: [String!]
+  singleChoiceReactions: [String!]!
+  slug: String
+  space: Space
+  status: PostStatus!
+  tags: [String!]!
+  title: String
+  topicIds: [String!]
+  topics: [Topic!]
+  totalRepliesCount: Int!
+}
+```
+
+### Fields
+
+#### `allowedEmojis` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `authMemberProps` ([`PostAuthMemberProps`](/docs/graphql/objects/post-auth-member-props))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `createdBy` ([`SpaceMember`](/docs/graphql/objects/space-member))
+
+#### `embeds` ([`[Embed!]`](/docs/graphql/objects/embed))
+
+#### `forbiddenEmojis` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `hasMoreContent` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `isAnonymous` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `mappingFields` ([`[PostMappingField!]`](/docs/graphql/objects/post-mapping-field))
+
+#### `mentions` ([`[Member!]`](/docs/graphql/objects/member))
+
+#### `negativeReactions` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `negativeReactionsCount` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `owner` ([`SpaceMember`](/docs/graphql/objects/space-member))
+
+#### `pinnedInto` ([`[PinnedInto!]!`](/docs/graphql/enums/pinned-into))
+
+#### `pinnedReplies` ([`[Post!]`](/docs/graphql/objects/post))
+
+#### `positiveReactions` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `positiveReactionsCount` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `postType` ([`PostType`](/docs/graphql/objects/post-type))
+
+#### `postTypeId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `primaryReactionType` ([`ReactionType!`](/docs/graphql/enums/reaction-type))
+
+#### `publishedAt` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `reactions` ([`[PostReactionDetail!]`](/docs/graphql/objects/post-reaction-detail))
+
+#### `reactionsCount` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `repliedTo` ([`Post`](/docs/graphql/objects/post))
+
+#### `repliedToIds` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `repliedTos` ([`[Post!]`](/docs/graphql/objects/post))
+
+#### `replies` ([`PaginatedPost`](/docs/graphql/objects/paginated-post))
+
+- ##### `excludePins` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+- ##### `orderBy` ([`PostListOrderByEnum`](/docs/graphql/enums/post-list-order-by-enum))
+
+#### `repliesCount` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `seoDetail` ([`PostSeoDetail!`](/docs/graphql/objects/post-seo-detail))
+
+#### `shortContent` ([`String`](/docs/graphql/scalars/string))
+
+#### `sidebarWidgets` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `singleChoiceReactions` ([`[String!]!`](/docs/graphql/scalars/string))
+
+#### `slug` ([`String`](/docs/graphql/scalars/string))
+
+#### `space` ([`Space`](/docs/graphql/objects/space))
+
+#### `status` ([`PostStatus!`](/docs/graphql/enums/post-status))
+
+#### `tags` ([`[String!]!`](/docs/graphql/scalars/string))
+
+#### `title` ([`String`](/docs/graphql/scalars/string))
+
+#### `topicIds` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `topics` ([`[Topic!]`](/docs/graphql/objects/topic))
+
+#### `totalRepliesCount` ([`Int!`](/docs/graphql/scalars/int))

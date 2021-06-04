@@ -1,0 +1,25 @@
+---
+id: paginated-media
+title: PaginatedMedia
+---
+
+No description
+
+```graphql
+type PaginatedMedia {
+  edges: [MediaEdge!]
+  nodes: [Media!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[MediaEdge!]`](/docs/graphql/objects/media-edge))
+
+#### `nodes` ([`[Media!]`](/docs/graphql/unions/media))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

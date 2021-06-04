@@ -1,0 +1,94 @@
+---
+id: app
+title: App
+---
+
+No description
+
+```graphql
+type App {
+  about: String
+  authorName: String
+  authorUrl: String
+  banner: Media
+  contexts: AppContexts!
+  createdAt: DateTime!
+  customScript: AppScript
+  description: String
+  embeds: [Embed!]
+  enabledContexts: [PermissionContext!]!
+  favicon: Media
+  id: ID!
+  image: Media
+  installed: Boolean
+  isComingSoon: Boolean!
+  isLocked: Boolean!
+  name: String!
+  owner: Member
+  ownerNetwork: Network
+  privacyPolicyUrl: String
+  secretToken: String
+  slug: String!
+  standing: AppStanding!
+  status: AppStatus!
+  termsOfServiceUrl: String
+  updatedAt: DateTime!
+  whitelistedIps: [String!]!
+}
+```
+
+### Fields
+
+#### `about` ([`String`](/docs/graphql/scalars/string))
+
+#### `authorName` ([`String`](/docs/graphql/scalars/string))
+
+#### `authorUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `banner` ([`Media`](/docs/graphql/unions/media))
+
+#### `contexts` ([`AppContexts!`](/docs/graphql/objects/app-contexts))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `customScript` ([`AppScript`](/docs/graphql/objects/app-script))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `embeds` ([`[Embed!]`](/docs/graphql/objects/embed))
+
+#### `enabledContexts` ([`[PermissionContext!]!`](/docs/graphql/enums/permission-context))
+
+#### `favicon` ([`Media`](/docs/graphql/unions/media))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `image` ([`Media`](/docs/graphql/unions/media))
+
+#### `installed` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `isComingSoon` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `isLocked` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `owner` ([`Member`](/docs/graphql/objects/member))
+
+#### `ownerNetwork` ([`Network`](/docs/graphql/objects/network))
+
+#### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `secretToken` ([`String`](/docs/graphql/scalars/string))
+
+#### `slug` ([`String!`](/docs/graphql/scalars/string))
+
+#### `standing` ([`AppStanding!`](/docs/graphql/enums/app-standing))
+
+#### `status` ([`AppStatus!`](/docs/graphql/enums/app-status))
+
+#### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `whitelistedIps` ([`[String!]!`](/docs/graphql/scalars/string))

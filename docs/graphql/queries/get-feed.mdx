@@ -1,0 +1,45 @@
+---
+id: get-feed
+title: getFeed
+---
+
+No description
+
+```graphql
+getFeed(
+  after: String
+  before: String
+  filterBy: [PostListFilterByInput!] = []
+  limit: Int!
+  offset: Int = 0
+  onlyMemberSpaces: Boolean
+  orderBy: PostListOrderByEnum
+  postTypeIds: [String!] = []
+  reverse: Boolean
+): PaginatedPost!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `filterBy` ([`[PostListFilterByInput!]`](/docs/graphql/inputs/post-list-filter-by-input))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `onlyMemberSpaces` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `orderBy` ([`PostListOrderByEnum`](/docs/graphql/enums/post-list-order-by-enum))
+
+#### `postTypeIds` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+### Type
+
+#### [`PaginatedPost`](/docs/graphql/objects/paginated-post)

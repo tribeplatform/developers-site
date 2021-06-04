@@ -1,0 +1,28 @@
+---
+id: member-invitation-link
+title: MemberInvitationLink
+---
+
+No description
+
+```graphql
+type MemberInvitationLink {
+  createdAt: DateTime!
+  id: ID!
+  inviter: Member
+  link: String!
+  network: Network
+}
+```
+
+### Fields
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `inviter` ([`Member`](/docs/graphql/objects/member))
+
+#### `link` ([`String!`](/docs/graphql/scalars/string))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))

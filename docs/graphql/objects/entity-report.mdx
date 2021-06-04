@@ -1,0 +1,37 @@
+---
+id: entity-report
+title: EntityReport
+---
+
+No description
+
+```graphql
+type EntityReport {
+  data: [ReportData!]
+  description: String
+  endDate: DateTime
+  entity: ReportableEntity
+  entityId: ID!
+  entityType: ReportableEntityType!
+  startDate: DateTime
+  tooltip: String
+}
+```
+
+### Fields
+
+#### `data` ([`[ReportData!]`](/docs/graphql/objects/report-data))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `endDate` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `entity` ([`ReportableEntity`](/docs/graphql/unions/reportable-entity))
+
+#### `entityId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `entityType` ([`ReportableEntityType!`](/docs/graphql/enums/reportable-entity-type))
+
+#### `startDate` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `tooltip` ([`String`](/docs/graphql/scalars/string))

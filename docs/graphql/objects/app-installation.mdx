@@ -1,0 +1,40 @@
+---
+id: app-installation
+title: AppInstallation
+---
+
+No description
+
+```graphql
+type AppInstallation {
+  app: App
+  appVersion: String
+  context: PermissionContext!
+  createdAt: DateTime!
+  id: ID!
+  network: Network
+  permissions: [String!]!
+  status: AppInstallationStatus!
+  updatedAt: DateTime!
+}
+```
+
+### Fields
+
+#### `app` ([`App`](/docs/graphql/objects/app))
+
+#### `appVersion` ([`String`](/docs/graphql/scalars/string))
+
+#### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `permissions` ([`[String!]!`](/docs/graphql/scalars/string))
+
+#### `status` ([`AppInstallationStatus!`](/docs/graphql/enums/app-installation-status))
+
+#### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))

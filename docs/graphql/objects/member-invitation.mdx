@@ -1,0 +1,49 @@
+---
+id: member-invitation
+title: MemberInvitation
+---
+
+No description
+
+```graphql
+type MemberInvitation {
+  createdAt: DateTime!
+  expiresAt: DateTime!
+  id: ID!
+  invitationMessage: String
+  invitee: Member
+  inviteeEmail: String!
+  inviteeName: String
+  inviter: Member
+  joinedAt: DateTime
+  network: Network
+  role: Role
+  status: MemberInvitationStatus!
+}
+```
+
+### Fields
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `expiresAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `invitationMessage` ([`String`](/docs/graphql/scalars/string))
+
+#### `invitee` ([`Member`](/docs/graphql/objects/member))
+
+#### `inviteeEmail` ([`String!`](/docs/graphql/scalars/string))
+
+#### `inviteeName` ([`String`](/docs/graphql/scalars/string))
+
+#### `inviter` ([`Member`](/docs/graphql/objects/member))
+
+#### `joinedAt` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `role` ([`Role`](/docs/graphql/objects/role))
+
+#### `status` ([`MemberInvitationStatus!`](/docs/graphql/enums/member-invitation-status))

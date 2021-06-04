@@ -1,0 +1,31 @@
+---
+id: member-space-notification-settings
+title: MemberSpaceNotificationSettings
+---
+
+No description
+
+```graphql
+type MemberSpaceNotificationSettings {
+  channel: NotificationChannel!
+  enabled: Boolean
+  isDefault: Boolean!
+  preference: SpaceNotificationPreference
+  sameAsDefault: Boolean!
+  space: Space
+}
+```
+
+### Fields
+
+#### `channel` ([`NotificationChannel!`](/docs/graphql/enums/notification-channel))
+
+#### `enabled` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `isDefault` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `preference` ([`SpaceNotificationPreference`](/docs/graphql/enums/space-notification-preference))
+
+#### `sameAsDefault` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `space` ([`Space`](/docs/graphql/objects/space))

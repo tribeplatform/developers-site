@@ -1,0 +1,40 @@
+---
+id: notification
+title: Notification
+---
+
+No description
+
+```graphql
+type Notification {
+  actor: Payload
+  createdAt: DateTime!
+  id: ID!
+  meta: NotificationMeta
+  object: Payload
+  read: Boolean!
+  space: Space
+  target: Payload
+  verb: NotificationVerb!
+}
+```
+
+### Fields
+
+#### `actor` ([`Payload`](/docs/graphql/objects/payload))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `meta` ([`NotificationMeta`](/docs/graphql/objects/notification-meta))
+
+#### `object` ([`Payload`](/docs/graphql/objects/payload))
+
+#### `read` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `space` ([`Space`](/docs/graphql/objects/space))
+
+#### `target` ([`Payload`](/docs/graphql/objects/payload))
+
+#### `verb` ([`NotificationVerb!`](/docs/graphql/enums/notification-verb))

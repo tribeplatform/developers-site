@@ -1,0 +1,25 @@
+---
+id: paginated-post
+title: PaginatedPost
+---
+
+No description
+
+```graphql
+type PaginatedPost {
+  edges: [PostEdge!]
+  nodes: [Post!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[PostEdge!]`](/docs/graphql/objects/post-edge))
+
+#### `nodes` ([`[Post!]`](/docs/graphql/objects/post))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

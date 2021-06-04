@@ -1,0 +1,36 @@
+---
+id: get-apps
+title: getApps
+---
+
+No description
+
+```graphql
+getApps(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  reverse: Boolean
+  status: AppStatus
+): PaginatedApp!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `status` ([`AppStatus`](/docs/graphql/enums/app-status))
+
+### Type
+
+#### [`PaginatedApp`](/docs/graphql/objects/paginated-app)

@@ -1,0 +1,46 @@
+---
+id: add-network-input
+title: AddNetworkInput
+---
+
+No description
+
+```graphql
+type AddNetworkInput {
+  description: String
+  domain: String
+  entrancePage: String
+  faviconId: String
+  industry: NetworkIndustryType
+  name: String!
+  owner: JoinNetworkInput!
+  primaryMembers: NetworkPrimaryMembersType
+  referrer: String
+  timeframe: NetworkTimeframeType
+  visibility: NetworkVisibility
+}
+```
+
+### Fields
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `domain` ([`String`](/docs/graphql/scalars/string))
+
+#### `entrancePage` ([`String`](/docs/graphql/scalars/string))
+
+#### `faviconId` ([`String`](/docs/graphql/scalars/string))
+
+#### `industry` ([`NetworkIndustryType`](/docs/graphql/enums/network-industry-type))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `owner` ([`JoinNetworkInput!`](/docs/graphql/inputs/join-network-input))
+
+#### `primaryMembers` ([`NetworkPrimaryMembersType`](/docs/graphql/enums/network-primary-members-type))
+
+#### `referrer` ([`String`](/docs/graphql/scalars/string))
+
+#### `timeframe` ([`NetworkTimeframeType`](/docs/graphql/enums/network-timeframe-type))
+
+#### `visibility` ([`NetworkVisibility`](/docs/graphql/enums/network-visibility))

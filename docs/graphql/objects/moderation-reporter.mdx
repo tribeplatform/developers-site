@@ -1,0 +1,31 @@
+---
+id: moderation-reporter
+title: ModerationReporter
+---
+
+No description
+
+```graphql
+type ModerationReporter {
+  createdAt: DateTime!
+  description: String
+  id: String!
+  reportCategory: ReportCategory!
+  reporter: Member
+  updatedAt: DateTime!
+}
+```
+
+### Fields
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `id` ([`String!`](/docs/graphql/scalars/string))
+
+#### `reportCategory` ([`ReportCategory!`](/docs/graphql/enums/report-category))
+
+#### `reporter` ([`Member`](/docs/graphql/objects/member))
+
+#### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))

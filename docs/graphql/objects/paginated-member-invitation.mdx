@@ -1,0 +1,25 @@
+---
+id: paginated-member-invitation
+title: PaginatedMemberInvitation
+---
+
+No description
+
+```graphql
+type PaginatedMemberInvitation {
+  edges: [MemberInvitationEdge!]
+  nodes: [MemberInvitation!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[MemberInvitationEdge!]`](/docs/graphql/objects/member-invitation-edge))
+
+#### `nodes` ([`[MemberInvitation!]`](/docs/graphql/objects/member-invitation))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

@@ -1,0 +1,25 @@
+---
+id: paginated-app
+title: PaginatedApp
+---
+
+No description
+
+```graphql
+type PaginatedApp {
+  edges: [AppEdge!]
+  nodes: [App!]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+```
+
+### Fields
+
+#### `edges` ([`[AppEdge!]`](/docs/graphql/objects/app-edge))
+
+#### `nodes` ([`[App!]`](/docs/graphql/objects/app))
+
+#### `pageInfo` ([`PageInfo!`](/docs/graphql/objects/page-info))
+
+#### `totalCount` ([`Int!`](/docs/graphql/scalars/int))

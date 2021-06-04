@@ -1,0 +1,34 @@
+---
+id: add-post-type-template-input
+title: AddPostTypeTemplateInput
+---
+
+No description
+
+```graphql
+type AddPostTypeTemplateInput {
+  context: PostTypeContext!
+  mappings: [PostTypeMappingInput!]
+  name: String!
+  pluralName: String!
+  shortContentTemplate: String
+  slug: String!
+  titleTemplate: String
+}
+```
+
+### Fields
+
+#### `context` ([`PostTypeContext!`](/docs/graphql/enums/post-type-context))
+
+#### `mappings` ([`[PostTypeMappingInput!]`](/docs/graphql/inputs/post-type-mapping-input))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `pluralName` ([`String!`](/docs/graphql/scalars/string))
+
+#### `shortContentTemplate` ([`String`](/docs/graphql/scalars/string))
+
+#### `slug` ([`String!`](/docs/graphql/scalars/string))
+
+#### `titleTemplate` ([`String`](/docs/graphql/scalars/string))

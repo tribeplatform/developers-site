@@ -1,0 +1,25 @@
+---
+id: status-reason
+title: StatusReason
+---
+
+No description
+
+```graphql
+type StatusReason {
+  changedAt: DateTime!
+  changedBy: NetworkStatusChangedBy!
+  changedById: String
+  reason: NetworkStatusReason
+}
+```
+
+### Fields
+
+#### `changedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `changedBy` ([`NetworkStatusChangedBy!`](/docs/graphql/enums/network-status-changed-by))
+
+#### `changedById` ([`String`](/docs/graphql/scalars/string))
+
+#### `reason` ([`NetworkStatusReason`](/docs/graphql/enums/network-status-reason))

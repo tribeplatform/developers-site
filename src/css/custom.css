@@ -21,12 +21,19 @@
 
   --ifm-navbar-padding-vertical: 1em;
   --ifm-navbar-height: 4em;
-  --ifm-navbar-background-color: rgba(245, 247, 248, 0.8);
   --ifm-navbar-shadow: none;
 
   --ifm-footer-background-color: #000;
 
   font-family: Circularxxtt, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    --ifm-navbar-background-color: rgba(245, 247, 248, 0.8);
+  }
 }
 
 @font-face {
@@ -129,11 +136,6 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-.navbar {
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 
 .navbar__logo {

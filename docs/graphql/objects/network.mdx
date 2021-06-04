@@ -1,0 +1,142 @@
+---
+id: network
+title: Network
+---
+
+No description
+
+```graphql
+type Network {
+  aliases: [String!]!
+  authMemberProps: NetworkAuthMemberProps
+  billingEmail: String
+  brandColor: String
+  companyName: String
+  createdAt: DateTime!
+  customScripts: [AppScript!]
+  defaultSpaces: [Space!]
+  description: String
+  domain: String!
+  favicon: Media
+  footer: Footer
+  id: ID!
+  incidentEmails: [String!]
+  landingPages: NetworkSettings
+  locale: String!
+  logo: Media
+  members(
+    after: String
+    before: String
+    limit: Int!
+    offset: Int = 0
+    reverse: Boolean
+    status: MemberStatusInput
+  ): PaginatedMember
+  membersCount: Int
+  membership: NetworkMembership!
+  name: String!
+  newDomain: String
+  organizationId: String
+  privacyPolicyUrl: String
+  roles: [Role!]
+  spaces(limit: Int!): PaginatedSpace
+  status: NetworkStatus!
+  statusLocked: Boolean!
+  statusReason: StatusReason
+  subscriptionPlan: Plan
+  termsOfServiceUrl: String
+  themes: Themes
+  topNavigation: TopNavigation
+  tribeBranding: Boolean!
+  visibility: NetworkVisibility!
+  whoCanInvite: [Role!]
+}
+```
+
+### Fields
+
+#### `aliases` ([`[String!]!`](/docs/graphql/scalars/string))
+
+#### `authMemberProps` ([`NetworkAuthMemberProps`](/docs/graphql/objects/network-auth-member-props))
+
+#### `billingEmail` ([`String`](/docs/graphql/scalars/string))
+
+#### `brandColor` ([`String`](/docs/graphql/scalars/string))
+
+#### `companyName` ([`String`](/docs/graphql/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `customScripts` ([`[AppScript!]`](/docs/graphql/objects/app-script))
+
+#### `defaultSpaces` ([`[Space!]`](/docs/graphql/objects/space))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `domain` ([`String!`](/docs/graphql/scalars/string))
+
+#### `favicon` ([`Media`](/docs/graphql/unions/media))
+
+#### `footer` ([`Footer`](/docs/graphql/objects/footer))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `incidentEmails` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `landingPages` ([`NetworkSettings`](/docs/graphql/objects/network-settings))
+
+#### `locale` ([`String!`](/docs/graphql/scalars/string))
+
+#### `logo` ([`Media`](/docs/graphql/unions/media))
+
+#### `members` ([`PaginatedMember`](/docs/graphql/objects/paginated-member))
+
+- ##### `after` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `before` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+- ##### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+- ##### `status` ([`MemberStatusInput`](/docs/graphql/enums/member-status-input))
+
+#### `membersCount` ([`Int`](/docs/graphql/scalars/int))
+
+#### `membership` ([`NetworkMembership!`](/docs/graphql/enums/network-membership))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `newDomain` ([`String`](/docs/graphql/scalars/string))
+
+#### `organizationId` ([`String`](/docs/graphql/scalars/string))
+
+#### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `roles` ([`[Role!]`](/docs/graphql/objects/role))
+
+#### `spaces` ([`PaginatedSpace`](/docs/graphql/objects/paginated-space))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `status` ([`NetworkStatus!`](/docs/graphql/enums/network-status))
+
+#### `statusLocked` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `statusReason` ([`StatusReason`](/docs/graphql/objects/status-reason))
+
+#### `subscriptionPlan` ([`Plan`](/docs/graphql/objects/plan))
+
+#### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `themes` ([`Themes`](/docs/graphql/objects/themes))
+
+#### `topNavigation` ([`TopNavigation`](/docs/graphql/objects/top-navigation))
+
+#### `tribeBranding` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `visibility` ([`NetworkVisibility!`](/docs/graphql/enums/network-visibility))
+
+#### `whoCanInvite` ([`[Role!]`](/docs/graphql/objects/role))

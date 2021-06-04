@@ -1,0 +1,69 @@
+---
+id: member
+title: Member
+---
+
+No description
+
+```graphql
+type Member {
+  attributes: MemberAttributes!
+  authMemberProps: MemberAuthMemberProps
+  banner: Media
+  displayName: String
+  email: String
+  emailStatus: MemberEmailStatus
+  externalId: ID
+  id: ID!
+  lastSeen: DateTime
+  name: String
+  network: Network
+  profilePicture: Media
+  role: Role
+  sidebarWidgets: [String!]
+  spaces(limit: Int!): PaginatedSpace
+  status: MemberStatus!
+  tagline: String
+  username: String!
+}
+```
+
+### Fields
+
+#### `attributes` ([`MemberAttributes!`](/docs/graphql/objects/member-attributes))
+
+#### `authMemberProps` ([`MemberAuthMemberProps`](/docs/graphql/objects/member-auth-member-props))
+
+#### `banner` ([`Media`](/docs/graphql/unions/media))
+
+#### `displayName` ([`String`](/docs/graphql/scalars/string))
+
+#### `email` ([`String`](/docs/graphql/scalars/string))
+
+#### `emailStatus` ([`MemberEmailStatus`](/docs/graphql/enums/member-email-status))
+
+#### `externalId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `lastSeen` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `profilePicture` ([`Media`](/docs/graphql/unions/media))
+
+#### `role` ([`Role`](/docs/graphql/objects/role))
+
+#### `sidebarWidgets` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `spaces` ([`PaginatedSpace`](/docs/graphql/objects/paginated-space))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `status` ([`MemberStatus!`](/docs/graphql/enums/member-status))
+
+#### `tagline` ([`String`](/docs/graphql/scalars/string))
+
+#### `username` ([`String!`](/docs/graphql/scalars/string))
