@@ -3,7 +3,7 @@ module.exports = {
   title: "Tribe",
   tagline: "Operating System for Connecting People",
   url: "https://developers.tribe.so",
-  baseUrl: "/developers-site/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "./img/favicon-32x32.png",
