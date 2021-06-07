@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: "warn",
   favicon: "./img/favicon-32x32.png",
   organizationName: "tribeplatform",
-  projectName: "developers",
+  projectName: "developers-site",
   themeConfig: {
     navbar: {
       logo: {
