@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Tribe",
+  title: "Tribe Developers",
   tagline: "Operating System for Connecting People",
   url: "https://developers.tribe.so",
   baseUrl: "/",
@@ -49,39 +49,100 @@ module.exports = {
           title: "Docs",
           items: [
             {
+              label: "Home",
+              to: "/",
+            },
+            {
               label: "Guide",
               to: "/docs/guide/index",
             },
+            {
+              label: "GraphQL",
+              to: "/docs/graphql/schema",
+            },
           ],
         },
         {
-          title: "Community",
+          title: "Follow Us",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Facebook",
+              href: "https://www.facebook.com/tribeplatform/",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/tribeplatform",
+            },
+            {
+              label: "Instagram",
+              href: "https://www.instagram.com/tribeplatform/",
+            },
+            {
+              label: "Linkedin",
+              href: "https://www.linkedin.com/company/18796857",
+            },
+            {
+              label: "Spotify",
+              href: "https://open.spotify.com/playlist/2FbGMDrfzW7xzNwomj5cUb",
             },
           ],
         },
         {
-          title: "More",
+          title: "Resources",
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Community",
+              href: "https://community.tribe.so/",
+            },
+            {
+              label: "Customers",
+              href: "https://tribe.so/customers",
+            },
+            {
+              label: "Books",
+              href: "https://tribe.so/books",
+            },
+            {
+              label: "Blog",
+              href: "https://tribe.so/blog",
+            },
+            {
+              label: "System Status",
+              href: "https://status.tribe.so/",
+            },
+          ],
+        },
+        {
+          title: "Company",
+          items: [
+            {
+              label: "Pricing",
+              href: "https://tribe.so/pricing",
+            },
+            {
+              label: "Careers",
+              href: "https://tribe.so/careers",
+            },
+            {
+              label: "Press Resources",
+              href: "https://tribe.so/press",
+            },
+            {
+              label: "Affiliate Program",
+              href: "https://tribe.so/referral",
+            },
+            {
+              label: "Terms of Service",
+              href: "https://tribe.so/terms-of-service",
+            },
+            {
+              label: "Privacy Policy",
+              href: "https://tribe.so/privacy-policy",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Made on 🌏planet earth. © ${new Date().getFullYear()}  Tribe Technologies Inc.`,
     },
   },
   plugins: [
@@ -104,7 +165,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/tribeplatform/developers-site/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

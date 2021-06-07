@@ -30,8 +30,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Tribe Developers Guide`}
+      description="Want to make Tribe better for everyone? Become a Tribe developer!"
     >
       <HomepageHeader />
       <main>
