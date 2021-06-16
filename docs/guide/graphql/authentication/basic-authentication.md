@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Basic HTTP Authentication
 
-:::info
+:::note
 Basic HTTP Authentication method is only available to handpicked developers at this time.
 :::
 

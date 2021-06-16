@@ -7,6 +7,10 @@ import TabItem from '@theme/TabItem';
 
 # JWT SSO
 
+:::note
+JWT SSO is only available to handpicked customers at this time.
+:::
+
 Although OAuth2 is the most recommended way of authenticating your members to community, JWT SSO is the easiest way if your website does not support OAuth2. You should be able to implement it by adding a few lines of code to your website or product.
 
 In this method, you'll sign a JSON Web Token (JWT) with User's information using a private key. Then the generated token should be passed as `jwt` in the query string to Tribe.
@@ -95,7 +99,6 @@ function createToken(user) {
     locale: user.locale, // optional
     title: user.title, // optional
     bio: user.bio, // optional
-    groups: [], // optional, more details under JWT Supported Keys
   };
   return jwt.sign(userData, privateKey, { algorithm: "HS256" });
 }
@@ -203,7 +206,7 @@ end
 Finally, you should pass the generated JWT token to Tribe as followed:
 
 ```
-https://YOUR_COMMUNITY_DOMAIN/auth/sso?jwt=[Generated SSO Token]&redirect=/answers
+https://YOUR_COMMUNITY_DOMAIN/api/auth/sso?jwt=[Generated SSO Token]&redirect=/answers
 ```
 
 Tribe will create the user using the provided information in the JWT and log them in if the user does not already exist. If the user exists, it will update user's information and log them in.
@@ -224,7 +227,7 @@ In this case, you may want to update existing users externalId or email using "U
 
 Tribe JWT SSO supports all [standard JWT fields](https://en.wikipedia.org/wiki/JSON_Web_Token#Standard_fields) including sub, aud, exp, and iat. Here you can find all fields supported in the JWT:
 
-- **sub (required)**: The ID of the user. It will be stored as externalId in Tribe's user object. Please note that the primary key of the user at Tribe is stored as \_id and is a 24 hexadecimal character string. In most of the API requests, you can query the user by Tribe id or the externalId (e.g. /api/v1/users/external:{externalId}).
+- **sub (required)**: The ID of the user. It will be stored as `externalId` in Tribe's user object.
 - **name (required)**: Name of the user.
 - **email (required)**: The email of the user. This email address is considered as a verified address. You should make sure you're verifying it on your side.
 - **exp**: The expiration time of the JWT. Although this value is not required, it's highly recommended to set it to 60 seconds from now. If it's not set, the token will be valid forever and can introduce security issues.
