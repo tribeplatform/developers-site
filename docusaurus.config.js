@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "Tribe Developers",
-  tagline: "Operating System for Connecting People",
+  tagline: "The Operating System for Connecting People",
   url: "https://developers.tribe.so",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -14,6 +14,9 @@ module.exports = {
       logo: {
         alt: "Tribe Logo",
         src: "./img/logo.svg",
+        srcDark: "./img/logo-white.svg",
+        href: "https://tribe.so",
+        target: "_self",
       },
       items: [
         {
@@ -33,7 +36,7 @@ module.exports = {
           type: "doc",
           docId: "graphql/schema",
           position: "left",
-          label: "GraphQL",
+          label: "GraphQL Reference",
         },
         {
           href: "https://github.com/facebook/docusaurus",
@@ -57,7 +60,7 @@ module.exports = {
               to: "/docs/guide/index",
             },
             {
-              label: "GraphQL",
+              label: "GraphQL Reference",
               to: "/docs/graphql/schema",
             },
           ],

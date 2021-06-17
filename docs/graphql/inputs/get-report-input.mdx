@@ -9,6 +9,7 @@ No description
 type GetReportInput {
   endDate: String
   slug: ReportSlug!
+  sort: ColumnSortInput
   startDate: String
   timeFrame: ReportTimeFrame
   timeZone: String!
@@ -20,6 +21,8 @@ type GetReportInput {
 #### `endDate` ([`String`](/docs/graphql/scalars/string))
 
 #### `slug` ([`ReportSlug!`](/docs/graphql/enums/report-slug))
+
+#### `sort` ([`ColumnSortInput`](/docs/graphql/inputs/column-sort-input))
 
 #### `startDate` ([`String`](/docs/graphql/scalars/string))
 

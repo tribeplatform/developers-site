@@ -7,12 +7,14 @@ No description
 
 ```graphql
 type PluralNetwork {
+  additionalSeatsCapacity: Int!
   aliases: [String!]!
   authMemberProps: NetworkAuthMemberProps
   billingEmail: String
   brandColor: String
   companyName: String
   createdAt: DateTime!
+  customMemberCapacity: Int!
   customScripts: [AppScript!]
   defaultSpaces: [Space!]
   description: String
@@ -24,6 +26,8 @@ type PluralNetwork {
   landingPages: NetworkSettings
   locale: String!
   logo: Media
+  memberCapacity: Int!
+  memberCapacityDeclared: Int!
   members(
     after: String
     before: String
@@ -39,6 +43,8 @@ type PluralNetwork {
   organizationId: String
   privacyPolicyUrl: String
   roles: [Role!]
+  seatCapacityDeclared: Int!
+  seatsCapacity: Int!
   spaces(limit: Int!): PaginatedSpace
   status: NetworkStatus!
   statusLocked: Boolean!
@@ -55,6 +61,8 @@ type PluralNetwork {
 
 ### Fields
 
+#### `additionalSeatsCapacity` ([`Int!`](/docs/graphql/scalars/int))
+
 #### `aliases` ([`[String!]!`](/docs/graphql/scalars/string))
 
 #### `authMemberProps` ([`NetworkAuthMemberProps`](/docs/graphql/objects/network-auth-member-props))
@@ -66,6 +74,8 @@ type PluralNetwork {
 #### `companyName` ([`String`](/docs/graphql/scalars/string))
 
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `customMemberCapacity` ([`Int!`](/docs/graphql/scalars/int))
 
 #### `customScripts` ([`[AppScript!]`](/docs/graphql/objects/app-script))
 
@@ -88,6 +98,12 @@ type PluralNetwork {
 #### `locale` ([`String!`](/docs/graphql/scalars/string))
 
 #### `logo` ([`Media`](/docs/graphql/unions/media))
+
+#### `memberCapacity` ([`Int!`](/docs/graphql/scalars/int))
+
+Calculated member capacity
+
+#### `memberCapacityDeclared` ([`Int!`](/docs/graphql/scalars/int))
 
 #### `members` ([`PaginatedMember`](/docs/graphql/objects/paginated-member))
 
@@ -116,6 +132,12 @@ type PluralNetwork {
 #### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `roles` ([`[Role!]`](/docs/graphql/objects/role))
+
+#### `seatCapacityDeclared` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `seatsCapacity` ([`Int!`](/docs/graphql/scalars/int))
+
+Calculated seats capacity
 
 #### `spaces` ([`PaginatedSpace`](/docs/graphql/objects/paginated-space))
 

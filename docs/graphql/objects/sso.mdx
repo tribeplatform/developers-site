@@ -8,6 +8,9 @@ No description
 ```graphql
 type Sso {
   buttonText: String
+  clientId: String
+  clientSecret: String
+  idpUrl: String
   name: String!
   status: SsoStatus!
   type: SsoType!
@@ -17,6 +20,12 @@ type Sso {
 ### Fields
 
 #### `buttonText` ([`String`](/docs/graphql/scalars/string))
+
+#### `clientId` ([`String`](/docs/graphql/scalars/string))
+
+#### `clientSecret` ([`String`](/docs/graphql/scalars/string))
+
+#### `idpUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `name` ([`String!`](/docs/graphql/scalars/string))
 
