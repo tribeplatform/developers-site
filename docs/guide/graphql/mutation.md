@@ -9,7 +9,7 @@ GraphQL mutations create and modify objects, similar to a PUT, POST, or DELETE r
 A list of all mutations available on Tribe's GraphQL API is available [here](/docs/graphql/schema) under _Mutations_ section.
 
 :::note
-All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token) or [Basic HTTP Authentication](/docs/guide/graphql/authentication/basic-authentication).
+All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token).
 :::
 
 ## Mutations Structure

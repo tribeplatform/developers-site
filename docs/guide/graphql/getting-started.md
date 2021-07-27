@@ -47,5 +47,5 @@ https://app.tribe.so/graphql
 You can access Tribe's GraphQL playground from the [same address](https://app.tribe.so/graphql) as well.
 
 :::note
-All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token) or [Basic HTTP Authentication](/docs/guide/graphql/authentication/basic-authentication).
+All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token).
 :::

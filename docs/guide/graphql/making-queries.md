@@ -9,7 +9,7 @@ A GraphQL query retrieves data from a server, similar to a GET request for a RES
 A list of all queries available on Tribe's GraphQL API is available [here](/docs/graphql/schema) under _Queries_ section.
 
 :::note
-All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token) or [Basic HTTP Authentication](/docs/guide/graphql/authentication/basic-authentication).
+All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token).
 :::
 
 ## Sample Query
