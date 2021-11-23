@@ -104,14 +104,11 @@ Authorization: Bearer {AccessToken}
 
 Tribe maps the JSON result to Tribe user's object as followed considering the order mentioned for each field:
 
-- `externalId`: id, ID, userId
-- `email`: email, user_email
-- `name`: name, display_name, displayName, full_name, pseudo
+- `externalId`: id, ID, sub, nameid
+- `email`: email, user_email, emailAddress
+- `name`: name, display_name, displayName, full_name, fullName
 - `username`: username, user_login, nickname
 - `profilePicture`: picture, icon_url
-- `fields`: fields
-
-If externalId is not available in the root JSON object, Tribe will also look for data key for all keys mentioned above (e.g. `data.id`, `data.name`, etc.)
 
 The above mapping covers most of the standard user info endpoints including WP OAuth Server. Custom mapping implementation is available for Enterprise clients.
 
