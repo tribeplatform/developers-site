@@ -110,7 +110,7 @@ Tribe maps the JSON result to Tribe user's object as followed considering the or
 - `username`: username, user_login, nickname
 - `profilePicture`: picture, icon_url
 
-The above mapping covers most of the standard user info endpoints including WP OAuth Server. Custom mapping implementation is available for Enterprise clients.
+The above mapping covers most of the standard user info endpoints including WP OAuth Server.
 
 ### Scope
 
