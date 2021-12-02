@@ -11,17 +11,21 @@ type UpdateAppInput {
   authorName: String
   authorUrl: String
   bannerId: String
-  contexts: AppContextsInput
+  comingSoon: Boolean
+  customCodes: UpdateAppCustomCodes
   description: String
+  docsUrl: String
+  enabledContexts: [PermissionContext!]
   faviconId: String
   imageId: String
   name: String
   privacyPolicyUrl: String
+  requiredPermissions: [PrimaryScopes!]
+  requiredPlan: PlanName
   slug: String
-  status: AppStatus
   termsOfServiceUrl: String
+  webhookSubscriptions: [String!]
   webhookUrl: String
-  whitelistedIps: [String!]
 }
 ```
 
@@ -35,9 +39,15 @@ type UpdateAppInput {
 
 #### `bannerId` ([`String`](/docs/graphql/scalars/string))
 
-#### `contexts` ([`AppContextsInput`](/docs/graphql/inputs/app-contexts-input))
+#### `comingSoon` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `customCodes` ([`UpdateAppCustomCodes`](/docs/graphql/inputs/update-app-custom-codes))
 
 #### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `docsUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `enabledContexts` ([`[PermissionContext!]`](/docs/graphql/enums/permission-context))
 
 #### `faviconId` ([`String`](/docs/graphql/scalars/string))
 
@@ -47,12 +57,14 @@ type UpdateAppInput {
 
 #### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
 
-#### `slug` ([`String`](/docs/graphql/scalars/string))
+#### `requiredPermissions` ([`[PrimaryScopes!]`](/docs/graphql/enums/primary-scopes))
 
-#### `status` ([`AppStatus`](/docs/graphql/enums/app-status))
+#### `requiredPlan` ([`PlanName`](/docs/graphql/enums/plan-name))
+
+#### `slug` ([`String`](/docs/graphql/scalars/string))
 
 #### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
 
-#### `webhookUrl` ([`String`](/docs/graphql/scalars/string))
+#### `webhookSubscriptions` ([`[String!]`](/docs/graphql/scalars/string))
 
-#### `whitelistedIps` ([`[String!]`](/docs/graphql/scalars/string))
+#### `webhookUrl` ([`String`](/docs/graphql/scalars/string))

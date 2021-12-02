@@ -1,0 +1,108 @@
+---
+id: plural-member
+title: PluralMember
+---
+
+No description
+
+```graphql
+type PluralMember {
+  activeSession: MemberSession
+  attributes: MemberAttributes!
+  authMemberProps: MemberAuthMemberProps
+  banner: Media
+  bannerId: ID
+  createdAt: DateTime
+  displayName: String
+  email: String
+  emailStatus: MemberEmailStatus
+  externalId: ID
+  fields: CustomFields
+  id: ID!
+  lastSeen: DateTime
+  name: String
+  network: PluralNetwork
+  networkId: ID!
+  newEmail: String
+  overrideTeammate: Boolean!
+  profilePicture: Media
+  profilePictureId: ID
+  role: Role
+  roleId: ID!
+  sessions: [MemberSession!]
+  sidebarWidgets: [String!]
+  spaces(limit: Int!): PaginatedSpace
+  status: MemberStatus!
+  tagline: String
+  teammate: Boolean!
+  updatedAt: DateTime
+  username: String!
+  verifiedAt: DateTime
+}
+```
+
+### Fields
+
+#### `activeSession` ([`MemberSession`](/docs/graphql/objects/member-session))
+
+#### `attributes` ([`MemberAttributes!`](/docs/graphql/objects/member-attributes))
+
+#### `authMemberProps` ([`MemberAuthMemberProps`](/docs/graphql/objects/member-auth-member-props))
+
+#### `banner` ([`Media`](/docs/graphql/unions/media))
+
+#### `bannerId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `createdAt` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `displayName` ([`String`](/docs/graphql/scalars/string))
+
+#### `email` ([`String`](/docs/graphql/scalars/string))
+
+#### `emailStatus` ([`MemberEmailStatus`](/docs/graphql/enums/member-email-status))
+
+#### `externalId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `fields` ([`CustomFields`](/docs/graphql/objects/custom-fields))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `lastSeen` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `network` ([`PluralNetwork`](/docs/graphql/objects/plural-network))
+
+#### `networkId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `newEmail` ([`String`](/docs/graphql/scalars/string))
+
+#### `overrideTeammate` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `profilePicture` ([`Media`](/docs/graphql/unions/media))
+
+#### `profilePictureId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `role` ([`Role`](/docs/graphql/objects/role))
+
+#### `roleId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `sessions` ([`[MemberSession!]`](/docs/graphql/objects/member-session))
+
+#### `sidebarWidgets` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `spaces` ([`PaginatedSpace`](/docs/graphql/objects/paginated-space))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `status` ([`MemberStatus!`](/docs/graphql/enums/member-status))
+
+#### `tagline` ([`String`](/docs/graphql/scalars/string))
+
+#### `teammate` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `updatedAt` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+#### `username` ([`String!`](/docs/graphql/scalars/string))
+
+#### `verifiedAt` ([`DateTime`](/docs/graphql/scalars/date-time))

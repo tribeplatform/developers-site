@@ -1,0 +1,52 @@
+---
+id: custom-field-schema-input
+title: CustomFieldSchemaInput
+---
+
+No description
+
+```graphql
+type CustomFieldSchemaInput {
+  default: String
+  description: String
+  items: BaseCustomFieldSchemaInput
+  key: String!
+  name: String!
+  properties: [BaseCustomFieldSchemaInput!]
+  readPrivacy: CustomFieldPrivacyInput
+  searchable: Boolean
+  settings: [CustomFieldSettingsInput!]
+  type: CustomFieldType!
+  typeOptions: CustomFieldTypeOptionsInput
+  validators: [CustomFieldValidatorInput!]
+  writePrivacy: CustomFieldPrivacyInput
+}
+```
+
+### Fields
+
+#### `default` ([`String`](/docs/graphql/scalars/string))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `items` ([`BaseCustomFieldSchemaInput`](/docs/graphql/inputs/base-custom-field-schema-input))
+
+#### `key` ([`String!`](/docs/graphql/scalars/string))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `properties` ([`[BaseCustomFieldSchemaInput!]`](/docs/graphql/inputs/base-custom-field-schema-input))
+
+#### `readPrivacy` ([`CustomFieldPrivacyInput`](/docs/graphql/inputs/custom-field-privacy-input))
+
+#### `searchable` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `settings` ([`[CustomFieldSettingsInput!]`](/docs/graphql/inputs/custom-field-settings-input))
+
+#### `type` ([`CustomFieldType!`](/docs/graphql/enums/custom-field-type))
+
+#### `typeOptions` ([`CustomFieldTypeOptionsInput`](/docs/graphql/inputs/custom-field-type-options-input))
+
+#### `validators` ([`[CustomFieldValidatorInput!]`](/docs/graphql/inputs/custom-field-validator-input))
+
+#### `writePrivacy` ([`CustomFieldPrivacyInput`](/docs/graphql/inputs/custom-field-privacy-input))

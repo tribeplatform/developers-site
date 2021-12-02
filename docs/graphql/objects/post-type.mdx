@@ -17,10 +17,10 @@ type PostType {
   negativeReactions: [String!]
   pluralName: String!
   positiveReactions: [String!]
-  postTypeTemplateId: String!
   primaryReactionType: ReactionType!
   shortContentTemplate: String
   singleChoiceReactions: [String!]!
+  slug: String!
   titleTemplate: String
   updatedAt: DateTime!
   validReplyTypes: [PostType!]
@@ -49,13 +49,13 @@ type PostType {
 
 #### `positiveReactions` ([`[String!]`](/docs/graphql/scalars/string))
 
-#### `postTypeTemplateId` ([`String!`](/docs/graphql/scalars/string))
-
 #### `primaryReactionType` ([`ReactionType!`](/docs/graphql/enums/reaction-type))
 
 #### `shortContentTemplate` ([`String`](/docs/graphql/scalars/string))
 
 #### `singleChoiceReactions` ([`[String!]!`](/docs/graphql/scalars/string))
+
+#### `slug` ([`String!`](/docs/graphql/scalars/string))
 
 #### `titleTemplate` ([`String`](/docs/graphql/scalars/string))
 

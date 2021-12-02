@@ -1,0 +1,42 @@
+---
+id: tags
+title: tags
+---
+
+No description
+
+```graphql
+tags(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  orderBy: TagListOrderByEnum
+  query: String
+  reverse: Boolean
+  spaceId: ID = 0
+): PaginatedTag!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `orderBy` ([`TagListOrderByEnum`](/docs/graphql/enums/tag-list-order-by-enum))
+
+#### `query` ([`String`](/docs/graphql/scalars/string))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `spaceId` ([`ID`](/docs/graphql/scalars/id))
+
+### Type
+
+#### [`PaginatedTag`](/docs/graphql/objects/paginated-tag)

@@ -12,13 +12,13 @@ GraphQL requests can be split into two sections: the query, and variables.
 
 In the query section, GraphQL variables begin with the `$` symbol and are declared after the `query` or `mutation` keyword, similar to passing an argument to a function.
 
-When you declare a variable, you need to specify its type, such as `AddSpaceInput`. This lets GraphQL know that you intend to refer to this type by this variable name later in the actual query.
+When you declare a variable, you need to specify its type, such as `CreateSpaceInput`. This lets GraphQL know that you intend to refer to this type by this variable name later in the actual query.
 
 The following query declares an `$input` variable and passes it to the input argument.
 
 ```graphql
-mutation($input: AddSpaceInput!) {
-  addSpace(input: $input) { ... }
+mutation($input: CreateSpaceInput!) {
+  createSpace(input: $input) { ... }
 }
 ```
 
@@ -30,19 +30,18 @@ The following JSON object defines the `$input` variable for the query above.
 {
   "input": {
     "name": "Product Updates",
-    "spaceTypeId": "5onYS9C83Pde",
-    "groupId": "p15Q7zycbml0"
+    "collectionId": "p15Q7zycbml0"
   }
 }
 ```
 
 ## Simplify Space Creation Request
 
-The following example uses the `addSpace` mutation from the previous article, but simplifies the mutation by using variables. The result is a much cleaner and reusable mutation.
+The following example uses the `createSpace` mutation from the previous article, but simplifies the mutation by using variables. The result is a much cleaner and reusable mutation.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 mutation ($input: AddSpaceInput!) {
-  addSpace(input: $input) {
+  createSpace(input: $input) {
     id
     name
     slug
@@ -56,8 +55,7 @@ mutation ($input: AddSpaceInput!) {
 {
   "input": {
     "name": "Product Updates",
-    "spaceTypeId": "5onYS9C83Pde",
-    "groupId": "p15Q7zycbml0"
+    "collectionId": "p15Q7zycbml0"
   }
 }
 ```
@@ -67,7 +65,7 @@ mutation ($input: AddSpaceInput!) {
 ```json
 {
   "data": {
-    "addSpace": {
+    "createSpace": {
       "id": "qgmFho8F6jlA",
       "name": "Product Updates",
       "slug": "product-updates-fw15x39k"
@@ -95,12 +93,11 @@ https://app.tribe.so/graphql \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {{access_token}}' \
 -d '{
-  "query": "mutation ($input: AddSpaceInput!) { addSpace(input: $input) { id, name, slug } }",
+  "query": "mutation ($input: CreateSpaceInput!) { createSpace(input: $input) { id, name, slug } }",
   "variables": {
     "input": {
         "name": "Product Updates",
-        "spaceTypeId": "5onYS9C83Pde",
-        "groupId": "p15Q7zycbml0"
+        "collectionId": "p15Q7zycbml0"
     }
   }
 }'
@@ -111,7 +108,7 @@ The response will look similar to this:
 ```json
 {
   "data": {
-    "addSpace": {
+    "createSpace": {
       "id": "qgmFho8F6jlA",
       "name": "Product Updates",
       "slug": "product-updates-fw15x39k"

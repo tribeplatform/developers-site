@@ -1,0 +1,28 @@
+---
+id: upsert-theme
+title: UpsertTheme
+---
+
+No description
+
+```graphql
+type UpsertTheme {
+  active: Boolean
+  colors: UpdateThemeColors
+  id: String!
+  name: String
+  typography: [UpdateThemeToken!]
+}
+```
+
+### Fields
+
+#### `active` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `colors` ([`UpdateThemeColors`](/docs/graphql/inputs/update-theme-colors))
+
+#### `id` ([`String!`](/docs/graphql/scalars/string))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `typography` ([`[UpdateThemeToken!]`](/docs/graphql/inputs/update-theme-token))

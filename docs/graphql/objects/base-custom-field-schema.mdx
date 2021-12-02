@@ -1,0 +1,40 @@
+---
+id: base-custom-field-schema
+title: BaseCustomFieldSchema
+---
+
+No description
+
+```graphql
+type BaseCustomFieldSchema {
+  description: String
+  items: BaseCustomFieldSchema
+  key: String!
+  name: String!
+  properties: [BaseCustomFieldSchema!]
+  required: Boolean
+  type: CustomFieldType!
+  typeOptions: CustomFieldTypeOptions
+  validators: [CustomFieldValidator!]
+}
+```
+
+### Fields
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `items` ([`BaseCustomFieldSchema`](/docs/graphql/objects/base-custom-field-schema))
+
+#### `key` ([`String!`](/docs/graphql/scalars/string))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `properties` ([`[BaseCustomFieldSchema!]`](/docs/graphql/objects/base-custom-field-schema))
+
+#### `required` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `type` ([`CustomFieldType!`](/docs/graphql/enums/custom-field-type))
+
+#### `typeOptions` ([`CustomFieldTypeOptions`](/docs/graphql/objects/custom-field-type-options))
+
+#### `validators` ([`[CustomFieldValidator!]`](/docs/graphql/objects/custom-field-validator))

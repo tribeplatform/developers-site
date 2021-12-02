@@ -1,0 +1,45 @@
+---
+id: collection
+title: Collection
+---
+
+No description
+
+```graphql
+type Collection {
+  createdAt: DateTime!
+  createdBy: Member
+  customOrderingIndex: Float!
+  description: String
+  id: ID!
+  name: String!
+  network: Network
+  slug: String!
+  spaces(limit: Int!): PaginatedSpace
+  updatedAt: DateTime!
+}
+```
+
+### Fields
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `createdBy` ([`Member`](/docs/graphql/objects/member))
+
+#### `customOrderingIndex` ([`Float!`](/docs/graphql/scalars/float))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `slug` ([`String!`](/docs/graphql/scalars/string))
+
+#### `spaces` ([`PaginatedSpace`](/docs/graphql/objects/paginated-space))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))

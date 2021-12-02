@@ -35,15 +35,14 @@ mutation {
 
 Mutations require input data, such as the data to create a new object, or the ID of an object to delete. For mutations that might require a substantial data object, the schema provides a dedicated input object type.
 
-For example, the [`addSpace`](/docs/graphql/mutations/add-space) mutation requires an input argument, which accepts a [`AddSpaceInput`](/docs/graphql/inputs/add-space-input) object. The `AddSpaceInput` type defines all the fields that can be used to create or modify a space.
+For example, the [`createSpace`](/docs/graphql/mutations/create-space) mutation requires an input argument, which accepts a [`CreateSpaceInput`](/docs/graphql/inputs/create-space-input) object. The `CreateSpaceInput` type defines all the fields that can be used to create or modify a space.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 mutation {
-  addSpace(
+  createSpace(
     input: {
       name: "Product Updates"
-      spaceTypeId: "5onYS9C83Pde"
-      groupId: "p15Q7zycbml0"
+      collectionId: "p15Q7zycbml0"
     }
   ) {
     # ...
@@ -52,16 +51,16 @@ mutation {
 ```
 
 :::note
-We will cover what `spaceTypeId` and `groupId` are later in this guide.
+We will cover what `collectionId` id later in this guide.
 :::
 
 ## Return fields
 
-Each mutation provides a set of fields that can be returned in the response. For example, one of the return fields available for the `addSpace` mutation is the Space object that was created by a successful mutation. Similar to a GraphQL query, you can select the fields on the new object that you want to include in the response.
+Each mutation provides a set of fields that can be returned in the response. For example, one of the return fields available for the `createSpace` mutation is the Space object that was created by a successful mutation. Similar to a GraphQL query, you can select the fields on the new object that you want to include in the response.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 mutation {
-  addSpace(input: {
+  createSpace(input: {
     # ...
   }) {
     id
@@ -77,11 +76,10 @@ The following mutation uses input objects and return fields to create a new spac
 
 ```graphql title="POST https://api.tribe.so/graphql"
 mutation {
-  addSpace(
+  createSpace(
     input: {
       name: "Product Updates"
-      spaceTypeId: "5onYS9C83Pde"
-      groupId: "p15Q7zycbml0"
+      collectionId: "p15Q7zycbml0"
     }
   ) {
     id
@@ -96,7 +94,7 @@ mutation {
 ```json
 {
   "data": {
-    "addSpace": {
+    "createSpace": {
       "id": "qgmFho8F6jlA",
       "name": "Product Updates",
       "slug": "product-updates-fw15x39k"

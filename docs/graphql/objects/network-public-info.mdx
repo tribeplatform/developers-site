@@ -9,6 +9,7 @@ No description
 type NetworkPublicInfo {
   domain: String!
   id: ID!
+  logo: Media
   membership: NetworkMembership!
   name: String!
   status: NetworkStatus!
@@ -21,6 +22,8 @@ type NetworkPublicInfo {
 #### `domain` ([`String!`](/docs/graphql/scalars/string))
 
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `logo` ([`Media`](/docs/graphql/unions/media))
 
 #### `membership` ([`NetworkMembership!`](/docs/graphql/enums/network-membership))
 

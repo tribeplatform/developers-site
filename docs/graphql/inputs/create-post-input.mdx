@@ -1,0 +1,38 @@
+---
+id: create-post-input
+title: CreatePostInput
+---
+
+Input for creating a post
+
+```graphql
+type CreatePostInput {
+  attachmentIds: [String!]
+  mappingFields: [PostMappingFieldInput!]
+  postTypeId: String!
+  publish: Boolean
+  tagNames: [String!]
+}
+```
+
+### Fields
+
+#### `attachmentIds` ([`[String!]`](/docs/graphql/scalars/string))
+
+The id of all the attachments to this post.
+
+#### `mappingFields` ([`[PostMappingFieldInput!]`](/docs/graphql/inputs/post-mapping-field-input))
+
+The fields of the post. Depending of the post type it may include title, text, image, etc.
+
+#### `postTypeId` ([`String!`](/docs/graphql/scalars/string))
+
+The id of this post's type
+
+#### `publish` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+Whether the post is published
+
+#### `tagNames` ([`[String!]`](/docs/graphql/scalars/string))
+
+The tags of this post.

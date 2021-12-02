@@ -1,0 +1,31 @@
+---
+id: invoice
+title: Invoice
+---
+
+No description
+
+```graphql
+type Invoice {
+  cardLastFourDigits: String
+  currency: String!
+  date: DateTime!
+  invoiceUrl: String
+  status: InvoiceStatus!
+  total: Float!
+}
+```
+
+### Fields
+
+#### `cardLastFourDigits` ([`String`](/docs/graphql/scalars/string))
+
+#### `currency` ([`String!`](/docs/graphql/scalars/string))
+
+#### `date` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `invoiceUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `status` ([`InvoiceStatus!`](/docs/graphql/enums/invoice-status))
+
+#### `total` ([`Float!`](/docs/graphql/scalars/float))

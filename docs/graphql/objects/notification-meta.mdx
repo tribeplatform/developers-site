@@ -7,13 +7,34 @@ No description
 
 ```graphql
 type NotificationMeta {
+  body: String!
+  fullTitle: String!
+  reason: NotificationReason!
   relativeUrl: String!
+  textBody: String!
+  textFullTitle: String!
+  textTitle: String!
+  title: String!
   url: String!
 }
 ```
 
 ### Fields
 
+#### `body` ([`String!`](/docs/graphql/scalars/string))
+
+#### `fullTitle` ([`String!`](/docs/graphql/scalars/string))
+
+#### `reason` ([`NotificationReason!`](/docs/graphql/enums/notification-reason))
+
 #### `relativeUrl` ([`String!`](/docs/graphql/scalars/string))
+
+#### `textBody` ([`String!`](/docs/graphql/scalars/string))
+
+#### `textFullTitle` ([`String!`](/docs/graphql/scalars/string))
+
+#### `textTitle` ([`String!`](/docs/graphql/scalars/string))
+
+#### `title` ([`String!`](/docs/graphql/scalars/string))
 
 #### `url` ([`String!`](/docs/graphql/scalars/string))

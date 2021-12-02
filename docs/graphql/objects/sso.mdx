@@ -7,17 +7,26 @@ No description
 
 ```graphql
 type Sso {
+  authorizationUrl: String
   buttonText: String
   clientId: String
   clientSecret: String
   idpUrl: String
-  name: String!
+  logoutUrl: String
+  name: String
+  provider: SsoProvider
+  scopes: [String!]
+  settingsUrl: String
   status: SsoStatus!
+  tokenUrl: String
   type: SsoType!
+  userProfileUrl: String
 }
 ```
 
 ### Fields
+
+#### `authorizationUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `buttonText` ([`String`](/docs/graphql/scalars/string))
 
@@ -27,8 +36,20 @@ type Sso {
 
 #### `idpUrl` ([`String`](/docs/graphql/scalars/string))
 
-#### `name` ([`String!`](/docs/graphql/scalars/string))
+#### `logoutUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `provider` ([`SsoProvider`](/docs/graphql/enums/sso-provider))
+
+#### `scopes` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `settingsUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `status` ([`SsoStatus!`](/docs/graphql/enums/sso-status))
 
+#### `tokenUrl` ([`String`](/docs/graphql/scalars/string))
+
 #### `type` ([`SsoType!`](/docs/graphql/enums/sso-type))
+
+#### `userProfileUrl` ([`String`](/docs/graphql/scalars/string))

@@ -1,0 +1,68 @@
+---
+id: create-space-input
+title: CreateSpaceInput
+---
+
+Input for creating a space.
+
+```graphql
+type CreateSpaceInput {
+  collectionId: ID
+  description: String
+  findableByRoles: [String!]
+  hidden: Boolean
+  imageId: String
+  inviteOnly: Boolean
+  joinableByRoles: [String!]
+  name: String!
+  private: Boolean
+  slug: String
+  viewableByRoles: [String!]
+}
+```
+
+### Fields
+
+#### `collectionId` ([`ID`](/docs/graphql/scalars/id))
+
+The id of the collection in which the space is created.
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+The description of the space.
+
+#### `findableByRoles` ([`[String!]`](/docs/graphql/scalars/string))
+
+The roles that can find this space.
+
+#### `hidden` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+Is this space hidden?
+
+#### `imageId` ([`String`](/docs/graphql/scalars/string))
+
+The id of the space image.
+
+#### `inviteOnly` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+Is this space invite only?
+
+#### `joinableByRoles` ([`[String!]`](/docs/graphql/scalars/string))
+
+The roles that can join this space.
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+The name of the space.
+
+#### `private` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+Is this space a private space?
+
+#### `slug` ([`String`](/docs/graphql/scalars/string))
+
+The slug of the space. It will be auto-generated if not provided.
+
+#### `viewableByRoles` ([`[String!]`](/docs/graphql/scalars/string))
+
+The roles that can view this space.

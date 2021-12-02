@@ -1,0 +1,37 @@
+---
+id: base-custom-field-schema-input
+title: BaseCustomFieldSchemaInput
+---
+
+No description
+
+```graphql
+type BaseCustomFieldSchemaInput {
+  description: String
+  items: BaseCustomFieldSchemaInput
+  key: String!
+  name: String!
+  properties: [BaseCustomFieldSchemaInput!]
+  type: CustomFieldType!
+  typeOptions: CustomFieldTypeOptionsInput
+  validators: [CustomFieldValidatorInput!]
+}
+```
+
+### Fields
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `items` ([`BaseCustomFieldSchemaInput`](/docs/graphql/inputs/base-custom-field-schema-input))
+
+#### `key` ([`String!`](/docs/graphql/scalars/string))
+
+#### `name` ([`String!`](/docs/graphql/scalars/string))
+
+#### `properties` ([`[BaseCustomFieldSchemaInput!]`](/docs/graphql/inputs/base-custom-field-schema-input))
+
+#### `type` ([`CustomFieldType!`](/docs/graphql/enums/custom-field-type))
+
+#### `typeOptions` ([`CustomFieldTypeOptionsInput`](/docs/graphql/inputs/custom-field-type-options-input))
+
+#### `validators` ([`[CustomFieldValidatorInput!]`](/docs/graphql/inputs/custom-field-validator-input))

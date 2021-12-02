@@ -1,0 +1,42 @@
+---
+id: space-members
+title: spaceMembers
+---
+
+No description
+
+```graphql
+spaceMembers(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  orderBy: SpaceMemberListOrderByEnum
+  reverse: Boolean
+  roleIds: [ID!] = []
+  spaceId: ID!
+): PaginatedSpaceMember!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `orderBy` ([`SpaceMemberListOrderByEnum`](/docs/graphql/enums/space-member-list-order-by-enum))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `roleIds` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
+
+### Type
+
+#### [`PaginatedSpaceMember`](/docs/graphql/objects/paginated-space-member)

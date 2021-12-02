@@ -1,0 +1,34 @@
+---
+id: space-post-type
+title: SpacePostType
+---
+
+No description
+
+```graphql
+type SpacePostType {
+  postType: PostType
+  postTypeId: ID!
+  space: Space
+  spaceId: ID!
+  whoCanPost: [ID!]
+  whoCanReact: [ID!]
+  whoCanReply: [ID!]
+}
+```
+
+### Fields
+
+#### `postType` ([`PostType`](/docs/graphql/objects/post-type))
+
+#### `postTypeId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `space` ([`Space`](/docs/graphql/objects/space))
+
+#### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `whoCanPost` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `whoCanReact` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `whoCanReply` ([`[ID!]`](/docs/graphql/scalars/id))

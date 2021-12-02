@@ -1,0 +1,45 @@
+---
+id: spaces
+title: spaces
+---
+
+No description
+
+```graphql
+spaces(
+  after: String
+  before: String
+  collectionId: String
+  limit: Int!
+  memberId: ID = 0
+  offset: Int = 0
+  orderBy: SpaceListOrderByEnum
+  query: String
+  reverse: Boolean
+): PaginatedSpace!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `collectionId` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `memberId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `orderBy` ([`SpaceListOrderByEnum`](/docs/graphql/enums/space-list-order-by-enum))
+
+#### `query` ([`String`](/docs/graphql/scalars/string))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+### Type
+
+#### [`PaginatedSpace`](/docs/graphql/objects/paginated-space)

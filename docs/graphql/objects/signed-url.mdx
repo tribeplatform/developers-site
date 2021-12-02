@@ -7,16 +7,25 @@ No description
 
 ```graphql
 type SignedUrl {
+  fields: String!
+  mediaDownloadUrl: String!
   mediaId: ID!
   mediaUrl: String!
   signedUrl: String!
+  urls: MediaUrls
 }
 ```
 
 ### Fields
+
+#### `fields` ([`String!`](/docs/graphql/scalars/string))
+
+#### `mediaDownloadUrl` ([`String!`](/docs/graphql/scalars/string))
 
 #### `mediaId` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `mediaUrl` ([`String!`](/docs/graphql/scalars/string))
 
 #### `signedUrl` ([`String!`](/docs/graphql/scalars/string))
+
+#### `urls` ([`MediaUrls`](/docs/graphql/objects/media-urls))

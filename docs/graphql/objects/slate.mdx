@@ -7,16 +7,25 @@ No description
 
 ```graphql
 type Slate {
-  id: ID!
-  slate: String!
-  type: SlateType!
+  acceptsAfter: Boolean
+  acceptsBefore: Boolean
+  components: [SlateComponentOrPlaceholder!]!
+  editable: SlateEditable
+  id: String!
+  rootComponents: [String!]!
 }
 ```
 
 ### Fields
 
-#### `id` ([`ID!`](/docs/graphql/scalars/id))
+#### `acceptsAfter` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `slate` ([`String!`](/docs/graphql/scalars/string))
+#### `acceptsBefore` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `type` ([`SlateType!`](/docs/graphql/enums/slate-type))
+#### `components` ([`[SlateComponentOrPlaceholder!]!`](/docs/graphql/unions/slate-component-or-placeholder))
+
+#### `editable` ([`SlateEditable`](/docs/graphql/enums/slate-editable))
+
+#### `id` ([`String!`](/docs/graphql/scalars/string))
+
+#### `rootComponents` ([`[String!]!`](/docs/graphql/scalars/string))

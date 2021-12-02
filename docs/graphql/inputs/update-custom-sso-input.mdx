@@ -1,0 +1,55 @@
+---
+id: update-custom-sso-input
+title: UpdateCustomSsoInput
+---
+
+No description
+
+```graphql
+type UpdateCustomSsoInput {
+  authorizationUrl: String
+  buttonText: String
+  clientId: String
+  clientSecret: String
+  idpUrl: String
+  logoutUrl: String
+  name: String
+  provider: SsoProvider
+  scopes: [String!]
+  settingsUrl: String
+  status: SsoStatus
+  tokenUrl: String
+  type: CustomSsoType!
+  userProfileUrl: String
+}
+```
+
+### Fields
+
+#### `authorizationUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `buttonText` ([`String`](/docs/graphql/scalars/string))
+
+#### `clientId` ([`String`](/docs/graphql/scalars/string))
+
+#### `clientSecret` ([`String`](/docs/graphql/scalars/string))
+
+#### `idpUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `logoutUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `provider` ([`SsoProvider`](/docs/graphql/enums/sso-provider))
+
+#### `scopes` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `settingsUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `status` ([`SsoStatus`](/docs/graphql/enums/sso-status))
+
+#### `tokenUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `type` ([`CustomSsoType!`](/docs/graphql/enums/custom-sso-type))
+
+#### `userProfileUrl` ([`String`](/docs/graphql/scalars/string))
