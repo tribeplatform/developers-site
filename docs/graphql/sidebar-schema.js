@@ -420,6 +420,7 @@ module.exports = {
         "graphql/objects/support-auth-token",
         "graphql/objects/support-limited-auth-token",
         "graphql/objects/support-sso-url",
+        "graphql/objects/subscription",
         "graphql/objects/tag",
         "graphql/objects/tag-edge",
         "graphql/objects/tag-filter",
