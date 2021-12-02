@@ -152,7 +152,7 @@ module.exports = {
     [
       require.resolve("@edno/docusaurus2-graphql-doc-generator"),
       {
-        schema: "http://localhost:5000/graphql",
+        schema: "https://app.tribe.so/graphql",
         rootPath: "./docs", // docs will be generated under './docs/graphql' (rootPath/baseURL)
         baseURL: "graphql",
         homepage: "./docs/schema.md",
