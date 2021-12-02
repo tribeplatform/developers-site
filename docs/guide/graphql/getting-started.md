@@ -12,7 +12,7 @@ GraphQL looks similar to JSON. The following example shows a simple GraphQL quer
 
 ```graphql title="POST https://api.tribe.so/graphql"
 query {
-  getMember(username: "admin") {
+  member(username: "admin") {
     id
     name
     username
@@ -26,7 +26,7 @@ query {
 ```json
 {
   "data": {
-    "getMember": {
+    "member": {
       "id": "2KONsPORsA",
       "name": "Siavash",
       "username": "admin",

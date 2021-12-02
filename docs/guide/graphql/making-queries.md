@@ -18,7 +18,7 @@ This query requests a space object, a few fields, and its members in a single re
 
 ```graphql title="POST https://api.tribe.so/graphql"
 query {
-  getSpace(spaceSlug: "general") {
+  space(slug: "general") {
     id
     name
     members(limit: 1) {
@@ -41,7 +41,7 @@ query {
 ```json
 {
   "data": {
-    "getSpace": {
+    "space": {
       "id": "Y4umRdAkY1aB",
       "name": "General",
       "members": {
@@ -68,15 +68,15 @@ Notice that after the data key, the shape of the response keys reflects the shap
 
 Queries can take arguments to fetch a specific object or filter list of objects.
 
-As an example, the `getMember` queries a single member. In the [GraphQL API reference](/docs/graphql/queries/get-member), the `getMember` query takes `memberId` or `username` as an argument.
+As an example, the `member` queries a single member. In the [GraphQL API reference](/docs/graphql/queries/member), the `member` query takes `id` or `username` as an argument.
 
-The `memberId` or `username` specifies the member to query. After selecting the `Member`, you list the fields on the [Member object](/docs/graphql/objects/member) that you want to return.
+The `is` or `username` specifies the member to query. After selecting the `Member`, you list the fields on the [Member object](/docs/graphql/objects/member) that you want to return.
 
 This query gets a specific member, and selects a few fields from that object.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 query {
-  getMember(username: "admin") {
+  member(username: "admin") {
     id
     name
     username
@@ -90,7 +90,7 @@ query {
 ```json
 {
   "data": {
-    "getMember": {
+    "member": {
       "id": "2KONsPORsA",
       "name": "Siavash",
       "username": "admin",
@@ -110,11 +110,11 @@ Within a connection, you need to select the `edges` field. The `edges` field ret
 
 Similar to querying an individual node, you list the fields that you want to return. The response returns that data for each node in the connection. If a connection has fewer than the requested number of objects, then the response contains all the data that's available.
 
-The following example requests a list of first 3 members and the first space they're part of using `getMembers` query and `spaces` connection.
+The following example requests a list of first 3 members and the first space they're part of using `members` query and `spaces` connection.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 query {
-  getMembers(limit: 3) {
+  members(limit: 3) {
     edges {
       node {
         id
@@ -140,7 +140,7 @@ query {
 ```json
 {
   "data": {
-    "getMembers": {
+    "members": {
       "edges": [
         {
           "node": {

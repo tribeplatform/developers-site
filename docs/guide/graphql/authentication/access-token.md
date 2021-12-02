@@ -4,15 +4,15 @@ sidebar_position: 1
 
 # Tribe Access Token
 
-All request to Tribe's GraphQL endpoint except for `getTokens` query should be authenticated.
+All request to Tribe's GraphQL endpoint except for `tokens` query should be authenticated.
 
 ## Guest Access Token
 
-If you want to authenticate as a guest or as a member using their email (or username) and password, the most common way is to use the [`getTokens`](/docs/graphql/queries/get-tokens) query. Here is a sample query:
+If you want to authenticate as a guest or as a member using their email (or username) and password, the most common way is to use the [`tokens`](/docs/graphql/queries/tokens) query. Here is a sample query:
 
 ```graphql
 query {
-  getTokens(networkDomain: "community.tribe.so") {
+  tokens(networkDomain: "community.tribe.so") {
     accessToken
     role {
       name
@@ -31,7 +31,7 @@ You should replace the `networkDomain` value to your own community address. The 
 ```json
 {
   "data": {
-    "getTokens": {
+    "tokens": {
       "accessToken": "eyJhbGciOiJIUzI1NiI...",
       "role": {
         "name": "Guest",
@@ -65,10 +65,10 @@ With a guest access token you have a read only access to all resources available
 
 ## User Access Token
 
-To retrieve a user access token you should use the guest access token to send a request to [`loginNetwork`](/docs/graphql/queries/login-network) query.
+To retrieve a user access token you should use the guest access token to send a request to [`loginNetwork`](/docs/graphql/mutations/login-network) query.
 
 ```graphql
-query {
+mutation {
   loginNetwork(
     input: { usernameOrEmail: "tribeuser", password: "tribepassword" }
   ) {
@@ -86,7 +86,7 @@ query {
 ```
 
 :::note
-The [`loginNetwork`](/docs/graphql/queries/login-network) does not work without passing a guest access token in the header and will result in `Unauthorized` error message.
+The [`loginNetwork`](/docs/graphql/mutations/login-network) does not work without passing a guest access token in the header and will result in `Unauthorized` error message.
 :::
 
 The result of the above query will be a user access token as followed:
