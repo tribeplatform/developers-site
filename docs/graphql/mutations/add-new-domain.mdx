@@ -3,18 +3,20 @@ id: add-new-domain
 title: addNewDomain
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateNewDomain</span>
+
 No description
 
 ```graphql
 addNewDomain(
-  input: CheckDomainAvailabilityInput!
+  input: DomainAvailabilityInput!
 ): DomainTransferStatus!
 
 ```
 
 ### Arguments
 
-#### `input` ([`CheckDomainAvailabilityInput!`](/docs/graphql/inputs/check-domain-availability-input))
+#### `input` ([`DomainAvailabilityInput!`](/docs/graphql/inputs/domain-availability-input))
 
 ### Type
 

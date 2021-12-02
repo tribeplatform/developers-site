@@ -3,21 +3,23 @@ id: update-moderation
 title: updateModeration
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateModerationItem</span>
+
 No description
 
 ```graphql
 updateModeration(
-  input: UpdateModerationInput!
-  moderationId: ID!
+  id: ID!
+  input: UpdateModerationItemInput!
 ): Action!
 
 ```
 
 ### Arguments
 
-#### `input` ([`UpdateModerationInput!`](/docs/graphql/inputs/update-moderation-input))
+#### `id` ([`ID!`](/docs/graphql/scalars/id))
 
-#### `moderationId` ([`ID!`](/docs/graphql/scalars/id))
+#### `input` ([`UpdateModerationItemInput!`](/docs/graphql/inputs/update-moderation-item-input))
 
 ### Type
 

@@ -7,9 +7,8 @@ No description
 
 ```graphql
 type PurchaseInput {
-  billingEmail: String
-  card: CardInput
-  name: PlanName!
+  billingDetails: BillingDetailsInput
+  planName: PlanName!
   renewalType: PlanRenewalType!
   seats: Int!
 }
@@ -17,11 +16,9 @@ type PurchaseInput {
 
 ### Fields
 
-#### `billingEmail` ([`String`](/docs/graphql/scalars/string))
+#### `billingDetails` ([`BillingDetailsInput`](/docs/graphql/inputs/billing-details-input))
 
-#### `card` ([`CardInput`](/docs/graphql/inputs/card-input))
-
-#### `name` ([`PlanName!`](/docs/graphql/enums/plan-name))
+#### `planName` ([`PlanName!`](/docs/graphql/enums/plan-name))
 
 #### `renewalType` ([`PlanRenewalType!`](/docs/graphql/enums/plan-renewal-type))
 

@@ -3,6 +3,8 @@ id: get-apps
 title: getApps
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by apps</span>
+
 No description
 
 ```graphql
@@ -12,7 +14,7 @@ getApps(
   limit: Int!
   offset: Int = 0
   reverse: Boolean
-  status: AppStatus
+  status: StoreItemStatus
 ): PaginatedApp!
 
 ```
@@ -29,7 +31,7 @@ getApps(
 
 #### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `status` ([`AppStatus`](/docs/graphql/enums/app-status))
+#### `status` ([`StoreItemStatus`](/docs/graphql/enums/store-item-status))
 
 ### Type
 

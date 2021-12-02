@@ -3,18 +3,20 @@ id: login-with-sso
 title: loginWithSso
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by ssoUrl</span>
+
 No description
 
 ```graphql
 loginWithSso(
-  type: SsoType!
+  input: SsoUrlInput!
 ): SsoUrl!
 
 ```
 
 ### Arguments
 
-#### `type` ([`SsoType!`](/docs/graphql/enums/sso-type))
+#### `input` ([`SsoUrlInput!`](/docs/graphql/inputs/sso-url-input))
 
 ### Type
 

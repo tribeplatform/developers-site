@@ -3,11 +3,13 @@ id: add-post
 title: addPost
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by createPost</span>
+
 No description
 
 ```graphql
 addPost(
-  input: AddPostInput!
+  input: CreatePostInput!
   spaceId: ID!
 ): Post!
 
@@ -15,7 +17,7 @@ addPost(
 
 ### Arguments
 
-#### `input` ([`AddPostInput!`](/docs/graphql/inputs/add-post-input))
+#### `input` ([`CreatePostInput!`](/docs/graphql/inputs/create-post-input))
 
 #### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
 

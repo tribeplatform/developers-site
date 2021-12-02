@@ -3,19 +3,21 @@ id: add-group
 title: addGroup
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by createCollection</span>
+
 No description
 
 ```graphql
 addGroup(
-  input: AddGroupInput!
-): Group!
+  input: CreateCollectionInput!
+): Collection!
 
 ```
 
 ### Arguments
 
-#### `input` ([`AddGroupInput!`](/docs/graphql/inputs/add-group-input))
+#### `input` ([`CreateCollectionInput!`](/docs/graphql/inputs/create-collection-input))
 
 ### Type
 
-#### [`Group`](/docs/graphql/objects/group)
+#### [`Collection`](/docs/graphql/objects/collection)

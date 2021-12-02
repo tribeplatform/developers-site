@@ -3,12 +3,14 @@ id: edit-image
 title: editImage
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateImage</span>
+
 No description
 
 ```graphql
 editImage(
   imageId: String!
-  input: EditImageInput!
+  input: UpdateImageInput!
 ): Image!
 
 ```
@@ -17,7 +19,7 @@ editImage(
 
 #### `imageId` ([`String!`](/docs/graphql/scalars/string))
 
-#### `input` ([`EditImageInput!`](/docs/graphql/inputs/edit-image-input))
+#### `input` ([`UpdateImageInput!`](/docs/graphql/inputs/update-image-input))
 
 ### Type
 

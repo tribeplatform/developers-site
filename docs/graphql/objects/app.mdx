@@ -11,29 +11,51 @@ type App {
   authorName: String
   authorUrl: String
   banner: Media
-  contexts: AppContexts!
+  bannerId: ID
+  clientId: String
+  clientSecret: String
+  comingSoon: Boolean!
   createdAt: DateTime!
-  customScript: AppScript
+  createdBy: Member
+  createdById: ID
+  customCodes: AppCustomCodes
   description: String
+  docsUrl: String
+  embedIds: [ID!]!
   embeds: [Embed!]
   enabledContexts: [PermissionContext!]!
   favicon: Media
+  faviconId: ID
+  globalBanner: Media
+  globalEmbeds: [Embed!]
+  globalFavicon: Media
+  globalImage: Media
+  globalImages: [Media!]
+  globalNetwork: PluralNetwork
   id: ID!
   image: Media
+  imageId: ID
+  imageIds: [ID!]!
+  images: [Media!]
   installed: Boolean
-  isComingSoon: Boolean!
-  isLocked: Boolean!
+  locked: Boolean!
   name: String!
-  owner: Member
-  ownerNetwork: Network
+  network: Network
+  networkId: ID!
   privacyPolicyUrl: String
+  requiredPermissions: [PrimaryScopes!]!
+  requiredPlan: PlanName!
   secretToken: String
   slug: String!
-  standing: AppStanding!
-  status: AppStatus!
+  standing: StoreItemStanding!
+  status: StoreItemStatus!
   termsOfServiceUrl: String
   updatedAt: DateTime!
-  whitelistedIps: [String!]!
+  updatedBy: Member
+  updatedById: ID
+  webhookSignSecret: String
+  webhookSubscriptions: [String!]
+  webhookUrl: String
 }
 ```
 
@@ -47,13 +69,27 @@ type App {
 
 #### `banner` ([`Media`](/docs/graphql/unions/media))
 
-#### `contexts` ([`AppContexts!`](/docs/graphql/objects/app-contexts))
+#### `bannerId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `clientId` ([`String`](/docs/graphql/scalars/string))
+
+#### `clientSecret` ([`String`](/docs/graphql/scalars/string))
+
+#### `comingSoon` ([`Boolean!`](/docs/graphql/scalars/boolean))
 
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
-#### `customScript` ([`AppScript`](/docs/graphql/objects/app-script))
+#### `createdBy` ([`Member`](/docs/graphql/objects/member))
+
+#### `createdById` ([`ID`](/docs/graphql/scalars/id))
+
+#### `customCodes` ([`AppCustomCodes`](/docs/graphql/objects/app-custom-codes))
 
 #### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `docsUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `embedIds` ([`[ID!]!`](/docs/graphql/scalars/id))
 
 #### `embeds` ([`[Embed!]`](/docs/graphql/objects/embed))
 
@@ -61,34 +97,64 @@ type App {
 
 #### `favicon` ([`Media`](/docs/graphql/unions/media))
 
+#### `faviconId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `globalBanner` ([`Media`](/docs/graphql/unions/media))
+
+#### `globalEmbeds` ([`[Embed!]`](/docs/graphql/objects/embed))
+
+#### `globalFavicon` ([`Media`](/docs/graphql/unions/media))
+
+#### `globalImage` ([`Media`](/docs/graphql/unions/media))
+
+#### `globalImages` ([`[Media!]`](/docs/graphql/unions/media))
+
+#### `globalNetwork` ([`PluralNetwork`](/docs/graphql/objects/plural-network))
+
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `image` ([`Media`](/docs/graphql/unions/media))
 
+#### `imageId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `imageIds` ([`[ID!]!`](/docs/graphql/scalars/id))
+
+#### `images` ([`[Media!]`](/docs/graphql/unions/media))
+
 #### `installed` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `isComingSoon` ([`Boolean!`](/docs/graphql/scalars/boolean))
-
-#### `isLocked` ([`Boolean!`](/docs/graphql/scalars/boolean))
+#### `locked` ([`Boolean!`](/docs/graphql/scalars/boolean))
 
 #### `name` ([`String!`](/docs/graphql/scalars/string))
 
-#### `owner` ([`Member`](/docs/graphql/objects/member))
+#### `network` ([`Network`](/docs/graphql/objects/network))
 
-#### `ownerNetwork` ([`Network`](/docs/graphql/objects/network))
+#### `networkId` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
+
+#### `requiredPermissions` ([`[PrimaryScopes!]!`](/docs/graphql/enums/primary-scopes))
+
+#### `requiredPlan` ([`PlanName!`](/docs/graphql/enums/plan-name))
 
 #### `secretToken` ([`String`](/docs/graphql/scalars/string))
 
 #### `slug` ([`String!`](/docs/graphql/scalars/string))
 
-#### `standing` ([`AppStanding!`](/docs/graphql/enums/app-standing))
+#### `standing` ([`StoreItemStanding!`](/docs/graphql/enums/store-item-standing))
 
-#### `status` ([`AppStatus!`](/docs/graphql/enums/app-status))
+#### `status` ([`StoreItemStatus!`](/docs/graphql/enums/store-item-status))
 
 #### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
-#### `whitelistedIps` ([`[String!]!`](/docs/graphql/scalars/string))
+#### `updatedBy` ([`Member`](/docs/graphql/objects/member))
+
+#### `updatedById` ([`ID`](/docs/graphql/scalars/id))
+
+#### `webhookSignSecret` ([`String`](/docs/graphql/scalars/string))
+
+#### `webhookSubscriptions` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `webhookUrl` ([`String`](/docs/graphql/scalars/string))

@@ -3,12 +3,14 @@ id: get-moderation-by-id
 title: getModerationById
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by moderationItem</span>
+
 No description
 
 ```graphql
 getModerationById(
   moderationId: ID!
-): Moderation!
+): ModerationItem!
 
 ```
 
@@ -18,4 +20,4 @@ getModerationById(
 
 ### Type
 
-#### [`Moderation`](/docs/graphql/objects/moderation)
+#### [`ModerationItem`](/docs/graphql/objects/moderation-item)

@@ -1,0 +1,59 @@
+---
+id: moderation-item
+title: ModerationItem
+---
+
+No description
+
+```graphql
+type ModerationItem {
+  createdAt: DateTime!
+  description: String
+  entity: ModerationItemEntity
+  flaggedBy: FlaggedType!
+  id: String!
+  moderator: Member
+  reporters(
+    after: String
+    before: String
+    limit: Int!
+    offset: Int = 0
+    reverse: Boolean
+  ): PaginatedModerationItemReporter
+  spaceId: String
+  status: ModerationStatus!
+  updatedAt: DateTime!
+}
+```
+
+### Fields
+
+#### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `description` ([`String`](/docs/graphql/scalars/string))
+
+#### `entity` ([`ModerationItemEntity`](/docs/graphql/unions/moderation-item-entity))
+
+#### `flaggedBy` ([`FlaggedType!`](/docs/graphql/enums/flagged-type))
+
+#### `id` ([`String!`](/docs/graphql/scalars/string))
+
+#### `moderator` ([`Member`](/docs/graphql/objects/member))
+
+#### `reporters` ([`PaginatedModerationItemReporter`](/docs/graphql/objects/paginated-moderation-item-reporter))
+
+- ##### `after` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `before` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+- ##### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `spaceId` ([`String`](/docs/graphql/scalars/string))
+
+#### `status` ([`ModerationStatus!`](/docs/graphql/enums/moderation-status))
+
+#### `updatedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))

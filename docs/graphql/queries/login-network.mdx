@@ -3,18 +3,20 @@ id: login-network
 title: loginNetwork
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by loginNetwork mutation</span>
+
 No description
 
 ```graphql
 loginNetwork(
-  input: LoginNetworkInput!
+  input: LoginNetworkWithPasswordInput!
 ): AuthToken!
 
 ```
 
 ### Arguments
 
-#### `input` ([`LoginNetworkInput!`](/docs/graphql/inputs/login-network-input))
+#### `input` ([`LoginNetworkWithPasswordInput!`](/docs/graphql/inputs/login-network-with-password-input))
 
 ### Type
 

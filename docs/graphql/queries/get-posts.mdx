@@ -3,6 +3,8 @@ id: get-posts
 title: getPosts
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by posts</span>
+
 No description
 
 ```graphql
@@ -16,7 +18,7 @@ getPosts(
   orderBy: PostListOrderByEnum
   postTypeIds: [String!] = []
   reverse: Boolean
-  spaceIds: [ID!]!
+  spaceIds: [ID!] = []
 ): PaginatedPost!
 
 ```
@@ -41,7 +43,7 @@ getPosts(
 
 #### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `spaceIds` ([`[ID!]!`](/docs/graphql/scalars/id))
+#### `spaceIds` ([`[ID!]`](/docs/graphql/scalars/id))
 
 ### Type
 

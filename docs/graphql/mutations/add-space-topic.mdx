@@ -3,22 +3,24 @@ id: add-space-topic
 title: addSpaceTopic
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by createTag</span>
+
 No description
 
 ```graphql
 addSpaceTopic(
-  input: AddTopicInput!
+  input: CreateTagInput!
   spaceId: ID!
-): Topic!
+): Tag!
 
 ```
 
 ### Arguments
 
-#### `input` ([`AddTopicInput!`](/docs/graphql/inputs/add-topic-input))
+#### `input` ([`CreateTagInput!`](/docs/graphql/inputs/create-tag-input))
 
 #### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
 
 ### Type
 
-#### [`Topic`](/docs/graphql/objects/topic)
+#### [`Tag`](/docs/graphql/objects/tag)

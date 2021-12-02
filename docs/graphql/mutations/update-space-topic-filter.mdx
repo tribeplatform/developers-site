@@ -3,11 +3,13 @@ id: update-space-topic-filter
 title: updateSpaceTopicFilter
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateSpaceTagFilter</span>
+
 No description
 
 ```graphql
 updateSpaceTopicFilter(
-  input: UpdateTopicFilter!
+  input: UpdateTagFilter!
   spaceId: ID!
 ): Action!
 
@@ -15,7 +17,7 @@ updateSpaceTopicFilter(
 
 ### Arguments
 
-#### `input` ([`UpdateTopicFilter!`](/docs/graphql/inputs/update-topic-filter))
+#### `input` ([`UpdateTagFilter!`](/docs/graphql/inputs/update-tag-filter))
 
 #### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
 

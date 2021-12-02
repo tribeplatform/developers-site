@@ -1,0 +1,39 @@
+---
+id: tag-posts
+title: tagPosts
+---
+
+No description
+
+```graphql
+tagPosts(
+  after: String
+  before: String
+  limit: Int!
+  offset: Int = 0
+  reverse: Boolean
+  spaceId: ID = 0
+  tagId: ID!
+): PaginatedPost!
+
+```
+
+### Arguments
+
+#### `after` ([`String`](/docs/graphql/scalars/string))
+
+#### `before` ([`String`](/docs/graphql/scalars/string))
+
+#### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+#### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `spaceId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `tagId` ([`ID!`](/docs/graphql/scalars/id))
+
+### Type
+
+#### [`PaginatedPost`](/docs/graphql/objects/paginated-post)

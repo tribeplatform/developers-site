@@ -3,6 +3,8 @@ id: get-space-topics
 title: getSpaceTopics
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by tags</span>
+
 No description
 
 ```graphql
@@ -14,7 +16,7 @@ getSpaceTopics(
   query: String
   reverse: Boolean
   spaceId: ID!
-): PaginatedTopic!
+): PaginatedTag!
 
 ```
 
@@ -36,4 +38,4 @@ getSpaceTopics(
 
 ### Type
 
-#### [`PaginatedTopic`](/docs/graphql/objects/paginated-topic)
+#### [`PaginatedTag`](/docs/graphql/objects/paginated-tag)

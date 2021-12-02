@@ -1,0 +1,30 @@
+---
+id: limited-token
+title: limitedToken
+---
+
+No description
+
+```graphql
+limitedToken(
+  context: PermissionContext!
+  entityId: String!
+  impersonateMemberId: String
+  networkId: String!
+): AppToken!
+
+```
+
+### Arguments
+
+#### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
+
+#### `entityId` ([`String!`](/docs/graphql/scalars/string))
+
+#### `impersonateMemberId` ([`String`](/docs/graphql/scalars/string))
+
+#### `networkId` ([`String!`](/docs/graphql/scalars/string))
+
+### Type
+
+#### [`AppToken`](/docs/graphql/objects/app-token)

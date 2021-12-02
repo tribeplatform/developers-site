@@ -9,20 +9,34 @@ No description
 type Space {
   authMemberProps: SpaceAuthMemberProps
   banner: Media
+  bannerId: ID
+  collection: Collection
   createdAt: DateTime!
   createdBy: Member
+  createdById: ID!
   customOrderingIndexInGroup: Float!
   description: String
-  group: Group
+  groupId: ID!
   hidden: Boolean
-  highlightedTopics: [HighlightedTopic!]
+  highlightedTags: [HighlightedTag!]
   id: ID!
   image: Media
+  imageId: ID
+  installedApps(
+    after: String
+    before: String
+    limit: Int!
+    offset: Int = 0
+    reverse: Boolean
+    status: AppInstallationStatus
+  ): PaginatedAppInstallation
   inviteOnly: Boolean
+  layout: String
   members(limit: Int!): PaginatedSpaceMember
   membersCount: Int!
   name: String!
   network: Network
+  networkId: ID!
   nonAdminsCanInvite: Boolean
   pinnedPosts: [Post!]
   posts(excludePins: Boolean, limit: Int!): PaginatedPost
@@ -32,8 +46,19 @@ type Space {
   seoDetail: SpaceSeoDetail
   sidebarWidgets: [String!]
   slug: String!
-  spaceType: SpaceType
-  topicFilter: TopicFilter
+  tagFilter: TagFilter
+  tags(
+    after: String
+    before: String
+    limit: Int!
+    offset: Int = 0
+    orderBy: TagListOrderByEnum
+    query: String
+    reverse: Boolean
+  ): PaginatedTag
+  whoCanPost: [ID!]
+  whoCanReact: [ID!]
+  whoCanReply: [ID!]
 }
 ```
 
@@ -43,25 +68,49 @@ type Space {
 
 #### `banner` ([`Media`](/docs/graphql/unions/media))
 
+#### `bannerId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `collection` ([`Collection`](/docs/graphql/objects/collection))
+
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
 #### `createdBy` ([`Member`](/docs/graphql/objects/member))
+
+#### `createdById` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `customOrderingIndexInGroup` ([`Float!`](/docs/graphql/scalars/float))
 
 #### `description` ([`String`](/docs/graphql/scalars/string))
 
-#### `group` ([`Group`](/docs/graphql/objects/group))
+#### `groupId` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `hidden` ([`Boolean`](/docs/graphql/scalars/boolean))
 
-#### `highlightedTopics` ([`[HighlightedTopic!]`](/docs/graphql/objects/highlighted-topic))
+#### `highlightedTags` ([`[HighlightedTag!]`](/docs/graphql/objects/highlighted-tag))
 
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `image` ([`Media`](/docs/graphql/unions/media))
 
+#### `imageId` ([`ID`](/docs/graphql/scalars/id))
+
+#### `installedApps` ([`PaginatedAppInstallation`](/docs/graphql/objects/paginated-app-installation))
+
+- ##### `after` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `before` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+- ##### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+- ##### `status` ([`AppInstallationStatus`](/docs/graphql/enums/app-installation-status))
+
 #### `inviteOnly` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `layout` ([`String`](/docs/graphql/scalars/string))
 
 #### `members` ([`PaginatedSpaceMember`](/docs/graphql/objects/paginated-space-member))
 
@@ -72,6 +121,8 @@ type Space {
 #### `name` ([`String!`](/docs/graphql/scalars/string))
 
 #### `network` ([`Network`](/docs/graphql/objects/network))
+
+#### `networkId` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `nonAdminsCanInvite` ([`Boolean`](/docs/graphql/scalars/boolean))
 
@@ -95,6 +146,26 @@ type Space {
 
 #### `slug` ([`String!`](/docs/graphql/scalars/string))
 
-#### `spaceType` ([`SpaceType`](/docs/graphql/objects/space-type))
+#### `tagFilter` ([`TagFilter`](/docs/graphql/objects/tag-filter))
 
-#### `topicFilter` ([`TopicFilter`](/docs/graphql/objects/topic-filter))
+#### `tags` ([`PaginatedTag`](/docs/graphql/objects/paginated-tag))
+
+- ##### `after` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `before` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/graphql/scalars/int))
+
+- ##### `orderBy` ([`TagListOrderByEnum`](/docs/graphql/enums/tag-list-order-by-enum))
+
+- ##### `query` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `whoCanPost` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `whoCanReact` ([`[ID!]`](/docs/graphql/scalars/id))
+
+#### `whoCanReply` ([`[ID!]`](/docs/graphql/scalars/id))

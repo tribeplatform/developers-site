@@ -9,7 +9,10 @@ No description
 type Payload {
   id: ID!
   media: Media
+  member: Member
   name: String
+  post: Post
+  space: Space
   summary: String
   type: PayloadType!
 }
@@ -21,7 +24,13 @@ type Payload {
 
 #### `media` ([`Media`](/docs/graphql/unions/media))
 
+#### `member` ([`Member`](/docs/graphql/objects/member))
+
 #### `name` ([`String`](/docs/graphql/scalars/string))
+
+#### `post` ([`Post`](/docs/graphql/objects/post))
+
+#### `space` ([`Space`](/docs/graphql/objects/space))
 
 #### `summary` ([`String`](/docs/graphql/scalars/string))
 

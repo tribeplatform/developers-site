@@ -3,6 +3,8 @@ id: get-moderation-reporters
 title: getModerationReporters
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by moderationItemReporters</span>
+
 No description
 
 ```graphql
@@ -13,7 +15,7 @@ getModerationReporters(
   moderationId: String!
   offset: Int = 0
   reverse: Boolean
-): PaginatedModerationReporter!
+): PaginatedModerationItemReporter!
 
 ```
 
@@ -33,4 +35,4 @@ getModerationReporters(
 
 ### Type
 
-#### [`PaginatedModerationReporter`](/docs/graphql/objects/paginated-moderation-reporter)
+#### [`PaginatedModerationItemReporter`](/docs/graphql/objects/paginated-moderation-item-reporter)

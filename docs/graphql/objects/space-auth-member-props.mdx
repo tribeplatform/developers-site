@@ -7,8 +7,9 @@ No description
 
 ```graphql
 type SpaceAuthMemberProps {
+  availablePostTypes: [PostType!]
   context: PermissionContext!
-  membershipStatus: SpaceMembershipStatus!
+  membershipStatus: SpaceMembershipStatus
   permissions: [ActionPermissions!]
   scopes: [String!]
 }
@@ -16,9 +17,11 @@ type SpaceAuthMemberProps {
 
 ### Fields
 
+#### `availablePostTypes` ([`[PostType!]`](/docs/graphql/objects/post-type))
+
 #### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
 
-#### `membershipStatus` ([`SpaceMembershipStatus!`](/docs/graphql/enums/space-membership-status))
+#### `membershipStatus` ([`SpaceMembershipStatus`](/docs/graphql/enums/space-membership-status))
 
 #### `permissions` ([`[ActionPermissions!]`](/docs/graphql/objects/action-permissions))
 

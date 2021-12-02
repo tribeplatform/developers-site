@@ -3,12 +3,14 @@ id: update-group
 title: updateGroup
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateCollection</span>
+
 No description
 
 ```graphql
 updateGroup(
   groupId: ID = 0
-  input: UpdateGroupInput!
+  input: UpdateCollectionInput!
 ): Action!
 
 ```
@@ -17,7 +19,7 @@ updateGroup(
 
 #### `groupId` ([`ID`](/docs/graphql/scalars/id))
 
-#### `input` ([`UpdateGroupInput!`](/docs/graphql/inputs/update-group-input))
+#### `input` ([`UpdateCollectionInput!`](/docs/graphql/inputs/update-collection-input))
 
 ### Type
 

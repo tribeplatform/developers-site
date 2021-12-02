@@ -9,14 +9,12 @@ No description
 type Plan {
   createdAt: DateTime!
   endDate: DateTime
+  extendable: Boolean!
   memberCapacity: Int!
   name: PlanName!
-  payment: Payment
-  price: Price
-  renewalType: PlanRenewalType!
   renewDate: DateTime
+  renewalType: PlanRenewalType!
   seatCapacity: Int!
-  seats: Seats
   startDate: DateTime!
   trial: Boolean!
 }
@@ -28,21 +26,17 @@ type Plan {
 
 #### `endDate` ([`DateTime`](/docs/graphql/scalars/date-time))
 
+#### `extendable` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
 #### `memberCapacity` ([`Int!`](/docs/graphql/scalars/int))
 
 #### `name` ([`PlanName!`](/docs/graphql/enums/plan-name))
 
-#### `payment` ([`Payment`](/docs/graphql/objects/payment))
-
-#### `price` ([`Price`](/docs/graphql/objects/price))
+#### `renewDate` ([`DateTime`](/docs/graphql/scalars/date-time))
 
 #### `renewalType` ([`PlanRenewalType!`](/docs/graphql/enums/plan-renewal-type))
 
-#### `renewDate` ([`DateTime`](/docs/graphql/scalars/date-time))
-
 #### `seatCapacity` ([`Int!`](/docs/graphql/scalars/int))
-
-#### `seats` ([`Seats`](/docs/graphql/objects/seats))
 
 #### `startDate` ([`DateTime!`](/docs/graphql/scalars/date-time))
 

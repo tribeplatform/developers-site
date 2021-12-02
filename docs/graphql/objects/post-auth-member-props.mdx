@@ -7,7 +7,10 @@ No description
 
 ```graphql
 type PostAuthMemberProps {
+  availableReplyTypes: [PostType!]
+  canReact: Boolean
   context: PermissionContext!
+  memberPostNotificationSettingsEnabled: Boolean
   permissions: [ActionPermissions!]
   scopes: [String!]
 }
@@ -15,7 +18,13 @@ type PostAuthMemberProps {
 
 ### Fields
 
+#### `availableReplyTypes` ([`[PostType!]`](/docs/graphql/objects/post-type))
+
+#### `canReact` ([`Boolean`](/docs/graphql/scalars/boolean))
+
 #### `context` ([`PermissionContext!`](/docs/graphql/enums/permission-context))
+
+#### `memberPostNotificationSettingsEnabled` ([`Boolean`](/docs/graphql/scalars/boolean))
 
 #### `permissions` ([`[ActionPermissions!]`](/docs/graphql/objects/action-permissions))
 

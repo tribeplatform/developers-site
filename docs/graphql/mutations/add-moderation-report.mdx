@@ -3,19 +3,21 @@ id: add-moderation-report
 title: addModerationReport
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by createReport</span>
+
 No description
 
 ```graphql
 addModerationReport(
-  input: AddModerationReportInput!
-): Moderation!
+  input: CreateReportInput!
+): ModerationItem!
 
 ```
 
 ### Arguments
 
-#### `input` ([`AddModerationReportInput!`](/docs/graphql/inputs/add-moderation-report-input))
+#### `input` ([`CreateReportInput!`](/docs/graphql/inputs/create-report-input))
 
 ### Type
 
-#### [`Moderation`](/docs/graphql/objects/moderation)
+#### [`ModerationItem`](/docs/graphql/objects/moderation-item)

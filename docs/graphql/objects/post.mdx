@@ -8,19 +8,29 @@ No description
 ```graphql
 type Post {
   allowedEmojis: [String!]
+  attachmentIds: [ID!]!
+  attachments: [File!]
   authMemberProps: PostAuthMemberProps
   createdAt: DateTime!
   createdBy: SpaceMember
+  createdById: ID!
+  embedIds: [String!]!
   embeds: [Embed!]
+  followersCount: Int
   forbiddenEmojis: [String!]
   hasMoreContent: Boolean!
   id: ID!
+  imageIds: [ID!]!
   isAnonymous: Boolean!
+  isHidden: Boolean
   mappingFields: [PostMappingField!]
+  mentionedMembers: [String!]!
   mentions: [Member!]
   negativeReactions: [String!]
   negativeReactionsCount: Int!
+  networkId: ID!
   owner: SpaceMember
+  ownerId: ID!
   pinnedInto: [PinnedInto!]!
   pinnedReplies: [Post!]
   positiveReactions: [String!]
@@ -32,12 +42,17 @@ type Post {
   reactions: [PostReactionDetail!]
   reactionsCount: Int!
   repliedTo: Post
+  repliedToId: ID
   repliedToIds: [String!]
   repliedTos: [Post!]
   replies(
+    after: String
+    before: String
     excludePins: Boolean
     limit: Int!
+    offset: Int = 0
     orderBy: PostListOrderByEnum
+    reverse: Boolean
   ): PaginatedPost
   repliesCount: Int!
   seoDetail: PostSeoDetail!
@@ -46,11 +61,12 @@ type Post {
   singleChoiceReactions: [String!]!
   slug: String
   space: Space
+  spaceId: ID!
   status: PostStatus!
-  tags: [String!]!
+  tags: [Tag!]
   title: String
+  topRepliers: [PostTopReplier!]!
   topicIds: [String!]
-  topics: [Topic!]
   totalRepliesCount: Int!
 }
 ```
@@ -59,13 +75,23 @@ type Post {
 
 #### `allowedEmojis` ([`[String!]`](/docs/graphql/scalars/string))
 
+#### `attachmentIds` ([`[ID!]!`](/docs/graphql/scalars/id))
+
+#### `attachments` ([`[File!]`](/docs/graphql/objects/file))
+
 #### `authMemberProps` ([`PostAuthMemberProps`](/docs/graphql/objects/post-auth-member-props))
 
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
 #### `createdBy` ([`SpaceMember`](/docs/graphql/objects/space-member))
 
+#### `createdById` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `embedIds` ([`[String!]!`](/docs/graphql/scalars/string))
+
 #### `embeds` ([`[Embed!]`](/docs/graphql/objects/embed))
+
+#### `followersCount` ([`Int`](/docs/graphql/scalars/int))
 
 #### `forbiddenEmojis` ([`[String!]`](/docs/graphql/scalars/string))
 
@@ -73,9 +99,15 @@ type Post {
 
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
 
+#### `imageIds` ([`[ID!]!`](/docs/graphql/scalars/id))
+
 #### `isAnonymous` ([`Boolean!`](/docs/graphql/scalars/boolean))
 
+#### `isHidden` ([`Boolean`](/docs/graphql/scalars/boolean))
+
 #### `mappingFields` ([`[PostMappingField!]`](/docs/graphql/objects/post-mapping-field))
+
+#### `mentionedMembers` ([`[String!]!`](/docs/graphql/scalars/string))
 
 #### `mentions` ([`[Member!]`](/docs/graphql/objects/member))
 
@@ -83,7 +115,11 @@ type Post {
 
 #### `negativeReactionsCount` ([`Int!`](/docs/graphql/scalars/int))
 
+#### `networkId` ([`ID!`](/docs/graphql/scalars/id))
+
 #### `owner` ([`SpaceMember`](/docs/graphql/objects/space-member))
+
+#### `ownerId` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `pinnedInto` ([`[PinnedInto!]!`](/docs/graphql/enums/pinned-into))
 
@@ -107,17 +143,27 @@ type Post {
 
 #### `repliedTo` ([`Post`](/docs/graphql/objects/post))
 
+#### `repliedToId` ([`ID`](/docs/graphql/scalars/id))
+
 #### `repliedToIds` ([`[String!]`](/docs/graphql/scalars/string))
 
 #### `repliedTos` ([`[Post!]`](/docs/graphql/objects/post))
 
 #### `replies` ([`PaginatedPost`](/docs/graphql/objects/paginated-post))
 
+- ##### `after` ([`String`](/docs/graphql/scalars/string))
+
+- ##### `before` ([`String`](/docs/graphql/scalars/string))
+
 - ##### `excludePins` ([`Boolean`](/docs/graphql/scalars/boolean))
 
 - ##### `limit` ([`Int!`](/docs/graphql/scalars/int))
 
+- ##### `offset` ([`Int`](/docs/graphql/scalars/int))
+
 - ##### `orderBy` ([`PostListOrderByEnum`](/docs/graphql/enums/post-list-order-by-enum))
+
+- ##### `reverse` ([`Boolean`](/docs/graphql/scalars/boolean))
 
 #### `repliesCount` ([`Int!`](/docs/graphql/scalars/int))
 
@@ -133,14 +179,18 @@ type Post {
 
 #### `space` ([`Space`](/docs/graphql/objects/space))
 
+#### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
+
 #### `status` ([`PostStatus!`](/docs/graphql/enums/post-status))
 
-#### `tags` ([`[String!]!`](/docs/graphql/scalars/string))
+#### `tags` ([`[Tag!]`](/docs/graphql/objects/tag))
 
 #### `title` ([`String`](/docs/graphql/scalars/string))
 
+#### `topRepliers` ([`[PostTopReplier!]!`](/docs/graphql/objects/post-top-replier))
+
 #### `topicIds` ([`[String!]`](/docs/graphql/scalars/string))
 
-#### `topics` ([`[Topic!]`](/docs/graphql/objects/topic))
+<span class="badge badge--warning">DEPRECATED: This field will be replaced by tagIds</span>
 
 #### `totalRepliesCount` ([`Int!`](/docs/graphql/scalars/int))

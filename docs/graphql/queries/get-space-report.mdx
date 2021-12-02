@@ -3,11 +3,13 @@ id: get-space-report
 title: getSpaceReport
 ---
 
+<span class="badge badge--warning">DEPRECATED: This query will be replaced by report</span>
+
 No description
 
 ```graphql
 getSpaceReport(
-  input: GetReportInput!
+  input: ReportInput!
   spaceId: String!
 ): Report!
 
@@ -15,7 +17,7 @@ getSpaceReport(
 
 ### Arguments
 
-#### `input` ([`GetReportInput!`](/docs/graphql/inputs/get-report-input))
+#### `input` ([`ReportInput!`](/docs/graphql/inputs/report-input))
 
 #### `spaceId` ([`String!`](/docs/graphql/scalars/string))
 

@@ -14,8 +14,10 @@ type UpdateNetworkInput {
   defaultSpaceIds: [ID!]
   description: String
   domain: String
+  entrancePage: String
   faviconId: String
   footer: UpdateFooter
+  hideDefaultAuthenticationForm: Boolean
   incidentEmails: [String!]
   industry: NetworkIndustryType
   landingPages: UpdateNetworkSettingsInput
@@ -26,11 +28,17 @@ type UpdateNetworkInput {
   newDomain: String
   primaryMembers: NetworkPrimaryMembersType
   privacyPolicyUrl: String
+  referrer: String
   termsOfServiceUrl: String
   themes: UpdateThemes
   timeframe: NetworkTimeframeType
   topNavigation: UpdateTopNavigation
   tribeBranding: Boolean
+  utmCampaign: String
+  utmContent: String
+  utmMedium: String
+  utmSource: String
+  utmTerm: String
   visibility: NetworkVisibility
   whoCanInviteIds: [String!]
 }
@@ -52,9 +60,13 @@ type UpdateNetworkInput {
 
 #### `domain` ([`String`](/docs/graphql/scalars/string))
 
+#### `entrancePage` ([`String`](/docs/graphql/scalars/string))
+
 #### `faviconId` ([`String`](/docs/graphql/scalars/string))
 
 #### `footer` ([`UpdateFooter`](/docs/graphql/inputs/update-footer))
+
+#### `hideDefaultAuthenticationForm` ([`Boolean`](/docs/graphql/scalars/boolean))
 
 #### `incidentEmails` ([`[String!]`](/docs/graphql/scalars/string))
 
@@ -76,6 +88,8 @@ type UpdateNetworkInput {
 
 #### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
 
+#### `referrer` ([`String`](/docs/graphql/scalars/string))
+
 #### `termsOfServiceUrl` ([`String`](/docs/graphql/scalars/string))
 
 #### `themes` ([`UpdateThemes`](/docs/graphql/inputs/update-themes))
@@ -85,6 +99,16 @@ type UpdateNetworkInput {
 #### `topNavigation` ([`UpdateTopNavigation`](/docs/graphql/inputs/update-top-navigation))
 
 #### `tribeBranding` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `utmCampaign` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmContent` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmMedium` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmSource` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmTerm` ([`String`](/docs/graphql/scalars/string))
 
 #### `visibility` ([`NetworkVisibility`](/docs/graphql/enums/network-visibility))
 

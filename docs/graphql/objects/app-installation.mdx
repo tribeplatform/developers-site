@@ -12,6 +12,8 @@ type AppInstallation {
   context: PermissionContext!
   createdAt: DateTime!
   id: ID!
+  installedAt: DateTime!
+  installedBy: Member
   network: Network
   permissions: [String!]!
   status: AppInstallationStatus!
@@ -30,6 +32,10 @@ type AppInstallation {
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `installedAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
+
+#### `installedBy` ([`Member`](/docs/graphql/objects/member))
 
 #### `network` ([`Network`](/docs/graphql/objects/network))
 

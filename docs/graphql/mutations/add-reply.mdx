@@ -3,11 +3,13 @@ id: add-reply
 title: addReply
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by createReply</span>
+
 No description
 
 ```graphql
 addReply(
-  input: AddPostInput!
+  input: CreatePostInput!
   postId: ID!
 ): Post!
 
@@ -15,7 +17,7 @@ addReply(
 
 ### Arguments
 
-#### `input` ([`AddPostInput!`](/docs/graphql/inputs/add-post-input))
+#### `input` ([`CreatePostInput!`](/docs/graphql/inputs/create-post-input))
 
 #### `postId` ([`ID!`](/docs/graphql/scalars/id))
 

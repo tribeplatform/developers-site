@@ -9,6 +9,7 @@ No description
 type UpdateMemberNetworkNotificationSettingsInput {
   enabled: Boolean
   mention: Boolean
+  options: UpdateMemberNetworkNotificationSettingsOptionsInput
   reaction: Boolean
   sameAsDefault: Boolean
 }
@@ -19,6 +20,10 @@ type UpdateMemberNetworkNotificationSettingsInput {
 #### `enabled` ([`Boolean`](/docs/graphql/scalars/boolean))
 
 #### `mention` ([`Boolean`](/docs/graphql/scalars/boolean))
+
+#### `options` ([`UpdateMemberNetworkNotificationSettingsOptionsInput`](/docs/graphql/inputs/update-member-network-notification-settings-options-input))
+
+Required if channel is DESKTOP
 
 #### `reaction` ([`Boolean`](/docs/graphql/scalars/boolean))
 

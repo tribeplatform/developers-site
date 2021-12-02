@@ -7,6 +7,8 @@ No description
 
 ```graphql
 type Network {
+  activeSso: ActiveSso
+  activeTheme: NewTheme
   additionalSeatsCapacity: Int!
   aliases: [String!]!
   authMemberProps: NetworkAuthMemberProps
@@ -14,20 +16,27 @@ type Network {
   brandColor: String
   companyName: String
   createdAt: DateTime!
+  createdBy: Member
+  createdById: ID!
+  customCodes(anonymize: Boolean!): [CustomCode!]
   customMemberCapacity: Int!
-  customScripts: [AppScript!]
   defaultSpaces: [Space!]
   description: String
   domain: String!
   favicon: Media
+  faviconId: ID
   footer: Footer
+  hideDefaultAuthenticationForm: Boolean!
   id: ID!
   incidentEmails: [String!]
+  industry: NetworkIndustryType
   landingPages: NetworkSettings
   locale: String!
   logo: Media
+  logoId: ID
   memberCapacity: Int!
   memberCapacityDeclared: Int!
+  memberFields: CustomFieldsSchema
   members(
     after: String
     before: String
@@ -39,8 +48,12 @@ type Network {
   membersCount: Int
   membership: NetworkMembership!
   name: String!
+  navigationSlates: NavigationSlates!
   newDomain: String
   organizationId: String
+  owner: Member
+  ownerId: ID!
+  pages: [Page!]
   privacyPolicyUrl: String
   roles: [Role!]
   seatCapacityDeclared: Int!
@@ -56,10 +69,15 @@ type Network {
   tribeBranding: Boolean!
   visibility: NetworkVisibility!
   whoCanInvite: [Role!]
+  whoCanInviteIds: [ID!]!
 }
 ```
 
 ### Fields
+
+#### `activeSso` ([`ActiveSso`](/docs/graphql/objects/active-sso))
+
+#### `activeTheme` ([`NewTheme`](/docs/graphql/objects/new-theme))
 
 #### `additionalSeatsCapacity` ([`Int!`](/docs/graphql/scalars/int))
 
@@ -75,9 +93,15 @@ type Network {
 
 #### `createdAt` ([`DateTime!`](/docs/graphql/scalars/date-time))
 
-#### `customMemberCapacity` ([`Int!`](/docs/graphql/scalars/int))
+#### `createdBy` ([`Member`](/docs/graphql/objects/member))
 
-#### `customScripts` ([`[AppScript!]`](/docs/graphql/objects/app-script))
+#### `createdById` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `customCodes` ([`[CustomCode!]`](/docs/graphql/objects/custom-code))
+
+- ##### `anonymize` ([`Boolean!`](/docs/graphql/scalars/boolean))
+
+#### `customMemberCapacity` ([`Int!`](/docs/graphql/scalars/int))
 
 #### `defaultSpaces` ([`[Space!]`](/docs/graphql/objects/space))
 
@@ -87,11 +111,17 @@ type Network {
 
 #### `favicon` ([`Media`](/docs/graphql/unions/media))
 
+#### `faviconId` ([`ID`](/docs/graphql/scalars/id))
+
 #### `footer` ([`Footer`](/docs/graphql/objects/footer))
+
+#### `hideDefaultAuthenticationForm` ([`Boolean!`](/docs/graphql/scalars/boolean))
 
 #### `id` ([`ID!`](/docs/graphql/scalars/id))
 
 #### `incidentEmails` ([`[String!]`](/docs/graphql/scalars/string))
+
+#### `industry` ([`NetworkIndustryType`](/docs/graphql/enums/network-industry-type))
 
 #### `landingPages` ([`NetworkSettings`](/docs/graphql/objects/network-settings))
 
@@ -99,11 +129,15 @@ type Network {
 
 #### `logo` ([`Media`](/docs/graphql/unions/media))
 
+#### `logoId` ([`ID`](/docs/graphql/scalars/id))
+
 #### `memberCapacity` ([`Int!`](/docs/graphql/scalars/int))
 
 Calculated member capacity
 
 #### `memberCapacityDeclared` ([`Int!`](/docs/graphql/scalars/int))
+
+#### `memberFields` ([`CustomFieldsSchema`](/docs/graphql/objects/custom-fields-schema))
 
 #### `members` ([`PaginatedMember`](/docs/graphql/objects/paginated-member))
 
@@ -125,9 +159,17 @@ Calculated member capacity
 
 #### `name` ([`String!`](/docs/graphql/scalars/string))
 
+#### `navigationSlates` ([`NavigationSlates!`](/docs/graphql/objects/navigation-slates))
+
 #### `newDomain` ([`String`](/docs/graphql/scalars/string))
 
 #### `organizationId` ([`String`](/docs/graphql/scalars/string))
+
+#### `owner` ([`Member`](/docs/graphql/objects/member))
+
+#### `ownerId` ([`ID!`](/docs/graphql/scalars/id))
+
+#### `pages` ([`[Page!]`](/docs/graphql/objects/page))
 
 #### `privacyPolicyUrl` ([`String`](/docs/graphql/scalars/string))
 
@@ -162,3 +204,5 @@ Calculated seats capacity
 #### `visibility` ([`NetworkVisibility!`](/docs/graphql/enums/network-visibility))
 
 #### `whoCanInvite` ([`[Role!]`](/docs/graphql/objects/role))
+
+#### `whoCanInviteIds` ([`[ID!]!`](/docs/graphql/scalars/id))

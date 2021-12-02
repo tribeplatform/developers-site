@@ -1,0 +1,38 @@
+---
+id: invite-members-input
+title: InviteMembersInput
+---
+
+Input for inviting members.
+
+```graphql
+type InviteMembersInput {
+  defaultSpacesIds: [ID!]
+  expiresAt: DateTime
+  invitationMessage: String
+  invitees: [InviteeInput!]!
+  roleId: ID
+}
+```
+
+### Fields
+
+#### `defaultSpacesIds` ([`[ID!]`](/docs/graphql/scalars/id))
+
+The ids of the default spaces the invitees have.
+
+#### `expiresAt` ([`DateTime`](/docs/graphql/scalars/date-time))
+
+When does the invitations expire? Empty for no expiration.
+
+#### `invitationMessage` ([`String`](/docs/graphql/scalars/string))
+
+Custom message for invitation.
+
+#### `invitees` ([`[InviteeInput!]!`](/docs/graphql/inputs/invitee-input))
+
+The details of the invitees
+
+#### `roleId` ([`ID`](/docs/graphql/scalars/id))
+
+The id of the role the invitees have.

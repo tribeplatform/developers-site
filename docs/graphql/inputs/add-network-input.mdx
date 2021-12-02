@@ -17,6 +17,11 @@ type AddNetworkInput {
   primaryMembers: NetworkPrimaryMembersType
   referrer: String
   timeframe: NetworkTimeframeType
+  utmCampaign: String
+  utmContent: String
+  utmMedium: String
+  utmSource: String
+  utmTerm: String
   visibility: NetworkVisibility
 }
 ```
@@ -42,5 +47,15 @@ type AddNetworkInput {
 #### `referrer` ([`String`](/docs/graphql/scalars/string))
 
 #### `timeframe` ([`NetworkTimeframeType`](/docs/graphql/enums/network-timeframe-type))
+
+#### `utmCampaign` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmContent` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmMedium` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmSource` ([`String`](/docs/graphql/scalars/string))
+
+#### `utmTerm` ([`String`](/docs/graphql/scalars/string))
 
 #### `visibility` ([`NetworkVisibility`](/docs/graphql/enums/network-visibility))

@@ -3,18 +3,20 @@ id: sso-redirect
 title: ssoRedirect
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by loginWithSsoCode</span>
+
 No description
 
 ```graphql
 ssoRedirect(
-  input: SsoRedirectInput!
+  input: LoginWithSsoCodeInput!
 ): AuthToken!
 
 ```
 
 ### Arguments
 
-#### `input` ([`SsoRedirectInput!`](/docs/graphql/inputs/sso-redirect-input))
+#### `input` ([`LoginWithSsoCodeInput!`](/docs/graphql/inputs/login-with-sso-code-input))
 
 ### Type
 

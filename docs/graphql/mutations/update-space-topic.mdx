@@ -3,20 +3,22 @@ id: update-space-topic
 title: updateSpaceTopic
 ---
 
+<span class="badge badge--warning">DEPRECATED: This mutation will be replaced by updateTag</span>
+
 No description
 
 ```graphql
 updateSpaceTopic(
-  input: UpdateTopicInput!
+  input: UpdateTagInput!
   spaceId: ID!
   topicId: ID!
-): Topic!
+): Tag!
 
 ```
 
 ### Arguments
 
-#### `input` ([`UpdateTopicInput!`](/docs/graphql/inputs/update-topic-input))
+#### `input` ([`UpdateTagInput!`](/docs/graphql/inputs/update-tag-input))
 
 #### `spaceId` ([`ID!`](/docs/graphql/scalars/id))
 
@@ -24,4 +26,4 @@ updateSpaceTopic(
 
 ### Type
 
-#### [`Topic`](/docs/graphql/objects/topic)
+#### [`Tag`](/docs/graphql/objects/tag)
