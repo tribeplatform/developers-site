@@ -6,7 +6,7 @@ sidebar_position: 1
 
 A typescript client to interact with the Tribe GraphQL API.
 
-## How to use
+# How to use
 
 ## Basic Usage
 
@@ -43,25 +43,26 @@ const t = new TribeClient({
 t.network.get('basic', accessToken: '<your-access-token>')
 ```
 
-
 ## App Usage
 
 To use the client in an app, you need to provide
-`clientId`, `clientSecret`, and `networkId` to get
-a token and use it to make queries. In case
-you want to act as a member you can provide `memberId`.
+`clientId` and `clientSecret` when initializing `TribeClient`.
+Then you can use `generateToken` to generate a token
+per network by providing `networkId` to make queries.
+In case you want to act as a member you can provide `memberId`
+to `generateToken`.
 
 ``` typescript
 const t = new TribeClient({
-  graphqlUrl?: 'localhost:4000/graphql',
+  graphqlUrl: 'https://app.dev.tribe.so/api/gateway',
+  clientId: '<your-client-id>',
+  clientSecret: '<your-client-secret>',
 })
 
-t.generateToken(
-  '<your-client-id>',
-  '<your-client-secret>',
-  '<your-network-id>',
-  '<acting-member-id>',
-).then(token => {
+t.generateToken({
+  networkId: '<your-network-id>',
+  memberId: '<acting-member-id>',
+}).then(token => {
 
   // you can set the token globally
   t.setToken(token)

@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:50](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L50)
+[packages/client/src/client.ts:51](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L51)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:52](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L52)
+[packages/client/src/client.ts:53](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L53)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:54](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L54)
+[packages/client/src/client.ts:55](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L55)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:56](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L56)
+[packages/client/src/client.ts:57](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L57)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:58](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L58)
+[packages/client/src/client.ts:59](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L59)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:60](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L60)
+[packages/client/src/client.ts:61](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L61)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:62](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L62)
+[packages/client/src/client.ts:63](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L63)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:64](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L64)
+[packages/client/src/client.ts:65](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L65)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:66](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L66)
+[packages/client/src/client.ts:67](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L67)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:90](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L90)
+[packages/client/src/client.ts:91](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L91)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:68](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L68)
+[packages/client/src/client.ts:69](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L69)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:70](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L70)
+[packages/client/src/client.ts:71](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L71)
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:72](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L72)
+[packages/client/src/client.ts:73](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L73)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:88](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L88)
+[packages/client/src/client.ts:89](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L89)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:74](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L74)
+[packages/client/src/client.ts:75](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L75)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:76](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L76)
+[packages/client/src/client.ts:77](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L77)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:82](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L82)
+[packages/client/src/client.ts:83](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L83)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:78](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L78)
+[packages/client/src/client.ts:79](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L79)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:80](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L80)
+[packages/client/src/client.ts:81](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L81)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:84](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L84)
+[packages/client/src/client.ts:85](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L85)
 
 ___
 
@@ -292,22 +292,21 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:86](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L86)
+[packages/client/src/client.ts:87](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L87)
 
 ## Methods
 
 ### generateToken
 
-▸ **generateToken**(`clientId`, `clientSecret`, `networkId`, `memberId?`): `Promise`<`string`\>
+▸ **generateToken**(`options`): `Promise`<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `clientId` | `string` |
-| `clientSecret` | `string` |
-| `networkId` | `string` |
-| `memberId?` | `string` |
+| `options` | `Object` |
+| `options.memberId?` | `string` |
+| `options.networkId` | `string` |
 
 #### Returns
 
@@ -321,7 +320,7 @@ ___
 
 ### getLimitedToken
 
-▸ **getLimitedToken**(`variables`, `fields?`, `basicToken?`): `Promise`<`AppToken`\>
+▸ **getLimitedToken**(`variables`, `fields?`, `useBasicToken?`): `Promise`<`AppToken`\>
 
 #### Parameters
 
@@ -329,7 +328,7 @@ ___
 | :------ | :------ | :------ |
 | `variables` | `QueryLimitedTokenArgs` | `undefined` |
 | `fields` | `LimitedTokenFields` | `'basic'` |
-| `basicToken?` | `string` | `undefined` |
+| `useBasicToken?` | `boolean` | `undefined` |
 
 #### Returns
 
@@ -337,7 +336,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:147](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L147)
+[packages/client/src/client.ts:148](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L148)
 
 ___
 
@@ -369,7 +368,7 @@ The AuthToken.
 
 #### Defined in
 
-[packages/client/src/client.ts:135](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L135)
+[packages/client/src/client.ts:136](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L136)
 
 ___
 
@@ -391,7 +390,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:160](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L160)
+[packages/client/src/client.ts:162](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L162)
 
 ___
 
@@ -412,4 +411,4 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:122](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L122)
+[packages/client/src/client.ts:123](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L123)

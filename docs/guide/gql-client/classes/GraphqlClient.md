@@ -45,7 +45,7 @@ BaseGraphQLClient.constructor
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:63](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L63)
+[packages/client/src/clients/graphql.client.ts:69](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L69)
 
 ## Methods
 
@@ -71,7 +71,7 @@ BaseGraphQLClient.constructor
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:76](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L76)
+[packages/client/src/clients/graphql.client.ts:95](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L95)
 
 ___
 
@@ -270,4 +270,4 @@ ___
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:107](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L107)
+[packages/client/src/clients/graphql.client.ts:126](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L126)
