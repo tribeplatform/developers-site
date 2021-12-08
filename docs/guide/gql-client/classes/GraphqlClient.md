@@ -25,7 +25,7 @@
 - [setEndpoint](GraphqlClient#setendpoint)
 - [setHeader](GraphqlClient#setheader)
 - [setHeaders](GraphqlClient#setheaders)
-- [setTokens](GraphqlClient#settokens)
+- [setToken](GraphqlClient#settoken)
 
 ## Constructors
 
@@ -45,7 +45,7 @@ BaseGraphQLClient.constructor
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:66](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L66)
+[packages/client/src/clients/graphql.client.ts:63](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L63)
 
 ## Methods
 
@@ -71,7 +71,7 @@ BaseGraphQLClient.constructor
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:80](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L80)
+[packages/client/src/clients/graphql.client.ts:76](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L76)
 
 ___
 
@@ -254,17 +254,15 @@ node_modules/graphql-request/dist/index.d.ts:25
 
 ___
 
-### setTokens
+### setToken
 
-▸ **setTokens**(`options`): `void`
+▸ **setToken**(`accessToken`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `Object` |
-| `options.accessToken?` | `string` |
-| `options.secretToken?` | `string` |
+| `accessToken` | `string` |
 
 #### Returns
 
@@ -272,4 +270,4 @@ ___
 
 #### Defined in
 
-[packages/client/src/clients/graphql.client.ts:109](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L109)
+[packages/client/src/clients/graphql.client.ts:107](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/clients/graphql.client.ts#L107)

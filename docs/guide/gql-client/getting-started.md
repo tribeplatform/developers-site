@@ -8,6 +8,8 @@ A typescript client to interact with the Tribe GraphQL API.
 
 ## How to use
 
+## Basic Usage
+
 you can provide graphql url and token as options to the client.
 
 ```typescript
@@ -15,7 +17,6 @@ import { TribeClient } from '@tribeplatform/gql-client'
 
 const t = new TribeClient({
   graphqlUrl: 'localhost:4000/graphql',
-  secretToken: '<your-secret-token>',
   accessToken: '<your-access-token>',
 })
 ```
@@ -42,7 +43,36 @@ const t = new TribeClient({
 t.network.get('basic', accessToken: '<your-access-token>')
 ```
 
-## Mutations
+
+## App Usage
+
+To use the client in an app, you need to provide
+`clientId`, `clientSecret`, and `networkId` to get
+a token and use it to make queries. In case
+you want to act as a member you can provide `memberId`.
+
+``` typescript
+const t = new TribeClient({
+  graphqlUrl?: 'localhost:4000/graphql',
+})
+
+t.generateToken(
+  '<your-client-id>',
+  '<your-client-secret>',
+  '<your-network-id>',
+  '<acting-member-id>',
+).then(token => {
+
+  // you can set the token globally
+  t.setToken(token)
+  
+  // or use it per request
+  t.network.get('basic', token)
+})
+```
+
+# Supported Mutations
+
 
 #### archiveMemberSchemaField(key: String!): Network!
 * ✅ t.network.archiveMemberSchemaField()
@@ -365,7 +395,7 @@ t.network.get('basic', accessToken: '<your-access-token>')
 #### verifyMemberEmail(input: VerifyMemberEmailInput!): Action!
 * ❌
 
-## Queries
+# Supported Queries
 
 #### accessGroup(id: ID!): AccessGroup!
 * ❌

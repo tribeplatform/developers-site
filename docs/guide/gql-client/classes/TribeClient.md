@@ -42,10 +42,11 @@ sidebar_position: 1
 
 ### Methods
 
+- [generateToken](TribeClient#generatetoken)
 - [getLimitedToken](TribeClient#getlimitedtoken)
 - [getTokens](TribeClient#gettokens)
 - [search](TribeClient#search)
-- [setTokens](TribeClient#settokens)
+- [setToken](TribeClient#settoken)
 
 ## Constructors
 
@@ -61,7 +62,7 @@ sidebar_position: 1
 
 #### Defined in
 
-[packages/client/src/client.ts:94](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L94)
+[packages/client/src/client.ts:95](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L95)
 
 ## Properties
 
@@ -71,7 +72,7 @@ sidebar_position: 1
 
 #### Defined in
 
-[packages/client/src/client.ts:46](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L46)
+[packages/client/src/client.ts:47](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L47)
 
 ___
 
@@ -81,7 +82,7 @@ ___
 
 #### Defined in
 
-[packages/client/src/client.ts:48](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L48)
+[packages/client/src/client.ts:49](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L49)
 
 ___
 
@@ -295,9 +296,32 @@ ___
 
 ## Methods
 
+### generateToken
+
+▸ **generateToken**(`clientId`, `clientSecret`, `networkId`, `memberId?`): `Promise`<`string`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `clientId` | `string` |
+| `clientSecret` | `string` |
+| `networkId` | `string` |
+| `memberId?` | `string` |
+
+#### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[packages/client/src/client.ts:176](https://gitlab.com/tribeplatform/tribe-neo/-/blob/master/packages/client/src/client.ts#L176)
+
+___
+
 ### getLimitedToken
 
-▸ **getLimitedToken**(`variables`, `fields?`): `Promise`<`AppToken`\>
+▸ **getLimitedToken**(`variables`, `fields?`, `basicToken?`): `Promise`<`AppToken`\>
 
 #### Parameters
 
@@ -305,6 +329,7 @@ ___
 | :------ | :------ | :------ |
 | `variables` | `QueryLimitedTokenArgs` | `undefined` |
 | `fields` | `LimitedTokenFields` | `'basic'` |
+| `basicToken?` | `string` | `undefined` |
 
 #### Returns
 
@@ -370,17 +395,16 @@ ___
 
 ___
 
-### setTokens
+### setToken
 
-▸ **setTokens**(`options`): `void`
+▸ **setToken**(`accessToken`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `Object` |
-| `options.accessToken?` | `string` |
-| `options.secretToken?` | `string` |
+| `accessToken` | `string` |
+
 
 #### Returns
 

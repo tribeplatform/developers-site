@@ -48,7 +48,6 @@
 | `accessToken?` | `string` |
 | `graphqlUrl?` | `string` |
 | `notifyOnTokenExpiration?` | `boolean` |
-| `secretToken?` | `string` |
 | `onError?` | (`errors`: `ErrorResponse`[], `client`: [`GraphqlClient`](../classes/GraphqlClient)) => `void` |
 
 #### Defined in
