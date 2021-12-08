@@ -50,7 +50,7 @@
 | `clientSecret?` | `string` |
 | `graphqlUrl?` | `string` |
 | `notifyOnTokenExpiration?` | `boolean` |
-| `onError?` | (`errors`: `ErrorResponse`[], `client`: [`GraphqlClient`](../classes/clients.GraphqlClient)) => `void` |
+| `onError?` | (`errors`: `ErrorResponse`[], `client`: [`GraphqlClient`](../classes/GraphqlClient)) => `void` |
 
 #### Defined in
 
