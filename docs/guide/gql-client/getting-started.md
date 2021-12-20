@@ -74,7 +74,6 @@ t.generateToken({
 
 # Supported Mutations
 
-
 #### archiveMemberSchemaField(key: String!): Network!
 * ✅ t.network.archiveMemberSchemaField()
 
