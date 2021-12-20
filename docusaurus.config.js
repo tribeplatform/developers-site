@@ -57,11 +57,11 @@ module.exports = {
             },
             {
               label: "Guide",
-              to: "/docs/guide/index",
+              to: "/guide/index",
             },
             {
               label: "GraphQL Reference",
-              to: "/docs/graphql/schema",
+              to: "/graphql/schema",
             },
           ],
         },
@@ -156,7 +156,7 @@ module.exports = {
         rootPath: "./docs", // docs will be generated under './docs/graphql' (rootPath/baseURL)
         baseURL: "graphql",
         homepage: "./docs/schema.md",
-        linkRoot: "/docs",
+        linkRoot: "/",
       },
     ],
   ],
@@ -169,6 +169,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             "https://github.com/tribeplatform/developers-site/edit/master/",
+          routeBasePath: "/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

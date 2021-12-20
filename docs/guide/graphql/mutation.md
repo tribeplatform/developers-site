@@ -6,10 +6,10 @@ sidebar_position: 10
 
 GraphQL mutations create and modify objects, similar to a PUT, POST, or DELETE request in REST. Mutation requests are sent to the same endpoint as query requests.
 
-A list of all mutations available on Tribe's GraphQL API is available [here](/docs/graphql/schema) under _Mutations_ section.
+A list of all mutations available on Tribe's GraphQL API is available [here](/graphql/schema) under _Mutations_ section.
 
 :::note
-All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token).
+All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/guide/graphql/authentication/access-token).
 :::
 
 ## Mutations Structure
@@ -35,7 +35,7 @@ mutation {
 
 Mutations require input data, such as the data to create a new object, or the ID of an object to delete. For mutations that might require a substantial data object, the schema provides a dedicated input object type.
 
-For example, the [`createSpace`](/docs/graphql/mutations/create-space) mutation requires an input argument, which accepts a [`CreateSpaceInput`](/docs/graphql/inputs/create-space-input) object. The `CreateSpaceInput` type defines all the fields that can be used to create or modify a space.
+For example, the [`createSpace`](/graphql/mutations/create-space) mutation requires an input argument, which accepts a [`CreateSpaceInput`](/graphql/inputs/create-space-input) object. The `CreateSpaceInput` type defines all the fields that can be used to create or modify a space.
 
 ```graphql title="POST https://api.tribe.so/graphql"
 mutation {
