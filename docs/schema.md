@@ -2,13 +2,13 @@
 
 The GraphQL API let you build apps and other integrations for Tribe. This is a reference to every query, mutation, input, and object available in the Tribe GraphQL API.
 
-We highly recommend reading [this guide](/docs/guide/graphql/getting-started) to get started with Tribe GraphQL API.
+We highly recommend reading [this guide](/guide/graphql/getting-started) to get started with Tribe GraphQL API.
 
 ## Authentication
 
 The GraphQL API requires a Tribe access token for making authenticated requests.
 
-You can obtain an access token either by following the [Tribe Access Token](/docs/guide/graphql/authentication/access-token) guide. Include the access token as an `Authorization` header in your requests as followed:
+You can obtain an access token either by following the [Tribe Access Token](/guide/graphql/authentication/access-token) guide. Include the access token as an `Authorization` header in your requests as followed:
 
 ```
 Authorization: Bearer {Access Token}

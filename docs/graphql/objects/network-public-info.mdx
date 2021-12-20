@@ -8,8 +8,11 @@ No description
 ```graphql
 type NetworkPublicInfo {
   domain: String!
+  favicon: Media
+  faviconId: ID
   id: ID!
   logo: Media
+  logoId: ID
   membership: NetworkMembership!
   name: String!
   status: NetworkStatus!
@@ -19,16 +22,22 @@ type NetworkPublicInfo {
 
 ### Fields
 
-#### `domain` ([`String!`](/docs/graphql/scalars/string))
+#### `domain` ([`String!`](/graphql/scalars/string))
 
-#### `id` ([`ID!`](/docs/graphql/scalars/id))
+#### `favicon` ([`Media`](/graphql/unions/media))
 
-#### `logo` ([`Media`](/docs/graphql/unions/media))
+#### `faviconId` ([`ID`](/graphql/scalars/id))
 
-#### `membership` ([`NetworkMembership!`](/docs/graphql/enums/network-membership))
+#### `id` ([`ID!`](/graphql/scalars/id))
 
-#### `name` ([`String!`](/docs/graphql/scalars/string))
+#### `logo` ([`Media`](/graphql/unions/media))
 
-#### `status` ([`NetworkStatus!`](/docs/graphql/enums/network-status))
+#### `logoId` ([`ID`](/graphql/scalars/id))
 
-#### `visibility` ([`NetworkVisibility!`](/docs/graphql/enums/network-visibility))
+#### `membership` ([`NetworkMembership!`](/graphql/enums/network-membership))
+
+#### `name` ([`String!`](/graphql/scalars/string))
+
+#### `status` ([`NetworkStatus!`](/graphql/enums/network-status))
+
+#### `visibility` ([`NetworkVisibility!`](/graphql/enums/network-visibility))

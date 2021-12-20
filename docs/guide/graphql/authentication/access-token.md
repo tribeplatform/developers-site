@@ -8,7 +8,7 @@ All request to Tribe's GraphQL endpoint except for `tokens` query should be auth
 
 ## Guest Access Token
 
-If you want to authenticate as a guest or as a member using their email (or username) and password, the most common way is to use the [`tokens`](/docs/graphql/queries/tokens) query. Here is a sample query:
+If you want to authenticate as a guest or as a member using their email (or username) and password, the most common way is to use the [`tokens`](/graphql/queries/tokens) query. Here is a sample query:
 
 ```graphql
 query {
@@ -65,7 +65,7 @@ With a guest access token you have a read only access to all resources available
 
 ## User Access Token
 
-To retrieve a user access token you should use the guest access token to send a request to [`loginNetwork`](/docs/graphql/mutations/login-network) query.
+To retrieve a user access token you should use the guest access token to send a request to [`loginNetwork`](/graphql/mutations/login-network) query.
 
 ```graphql
 mutation {
@@ -86,7 +86,7 @@ mutation {
 ```
 
 :::note
-The [`loginNetwork`](/docs/graphql/mutations/login-network) does not work without passing a guest access token in the header and will result in `Unauthorized` error message.
+The [`loginNetwork`](/graphql/mutations/login-network) does not work without passing a guest access token in the header and will result in `Unauthorized` error message.
 :::
 
 The result of the above query will be a user access token as followed:

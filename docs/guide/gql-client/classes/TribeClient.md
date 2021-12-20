@@ -404,7 +404,6 @@ ___
 | :------ | :------ |
 | `accessToken` | `string` |
 
-
 #### Returns
 
 `void`

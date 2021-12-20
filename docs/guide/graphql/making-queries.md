@@ -6,10 +6,10 @@ sidebar_position: 5
 
 A GraphQL query retrieves data from a server, similar to a GET request for a REST API. However, unlike REST, all GraphQL queries are sent to a single endpoint and use the POST http method.
 
-A list of all queries available on Tribe's GraphQL API is available [here](/docs/graphql/schema) under _Queries_ section.
+A list of all queries available on Tribe's GraphQL API is available [here](/graphql/schema) under _Queries_ section.
 
 :::note
-All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/docs/guide/graphql/authentication/access-token).
+All requests to Tribe's GraphQL endpoint should be authenticated using [Tribe Access Token](/guide/graphql/authentication/access-token).
 :::
 
 ## Sample Query
@@ -68,9 +68,9 @@ Notice that after the data key, the shape of the response keys reflects the shap
 
 Queries can take arguments to fetch a specific object or filter list of objects.
 
-As an example, the `member` queries a single member. In the [GraphQL API reference](/docs/graphql/queries/member), the `member` query takes `id` or `username` as an argument.
+As an example, the `member` queries a single member. In the [GraphQL API reference](/graphql/queries/member), the `member` query takes `id` or `username` as an argument.
 
-The `is` or `username` specifies the member to query. After selecting the `Member`, you list the fields on the [Member object](/docs/graphql/objects/member) that you want to return.
+The `is` or `username` specifies the member to query. After selecting the `Member`, you list the fields on the [Member object](/graphql/objects/member) that you want to return.
 
 This query gets a specific member, and selects a few fields from that object.
 
