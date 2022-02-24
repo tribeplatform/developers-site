@@ -40,7 +40,7 @@ Tribe will first try to find the user using the provided id. It will check if an
 If no user is found based on externalId == id, it will try to find the user using the email address provided and connects the user's externalId to the provided id.
 
 :::warning
-If a user with externalId == id check does not exist and the user matching with email already has an externalId, Tribe will through a conflict error.
+If a user with externalId == id check does not exist and the user matching with email already has an externalId, Tribe will throw a conflict error.
 
 In this case, you may want to update existing users externalId or email using "Update a Specific User" API.
 :::
